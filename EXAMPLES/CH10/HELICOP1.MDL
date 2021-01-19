@@ -1,0 +1,2217 @@
+Model {
+  Name			  "Helicopter"
+  Version		  5.0
+  SaveDefaultBlockParams  on
+  SampleTimeColors	  off
+  LibraryLinkDisplay	  "user"
+  WideLines		  on
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  ShowStorageClass	  off
+  ExecutionOrder	  off
+  RecordCoverage	  off
+  CovPath		  "/"
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  covSaveCumulativeToWorkspaceVar on
+  CovSaveSingleToWorkspaceVar on
+  CovCumulativeVarName	  "covCumulativeData"
+  CovCumulativeReport	  off
+  DataTypeOverride	  "UseLocalSettings"
+  MinMaxOverflowLogging	  "MinMaxAndOverflow"
+  MinMaxOverflowArchiveMode "Overwrite"
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks on
+  BrowserLookUnderMasks	  on
+  PreLoadFcn		  "load HelicopterData"
+  PreSaveFcn		  ";fxptdlg('fxptdlg_presave_cb');"
+  CloseFcn		  ";fxptdlg('fxptdlg_close_cb');"
+  InitFcn		  ";fxptdlg('fxptdlg_simInit_cb');"
+  StartFcn		  ";fxptdlg('fxptdlg_sim_cb');"
+  StopFcn		  ";fxptdlg('fxptdlg_store_cb');"
+  Created		  "Mon Mar 31 14:42:23 2003"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "Jim"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Wed Aug 13 18:24:35 2003"
+  ModelVersionFormat	  "1.%<AutoIncrement:278>"
+  ConfigurationManager	  "None"
+  SimParamPage		  "Solver"
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "MATLABWorkspace"
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  TryForcingSFcnDF	  off
+  ExtModeMexFile	  "ext_xpc"
+  ExtModeBatchMode	  off
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  off
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  BufferReuse		  on
+  RTWExpressionDepthLimit 5
+  SimulationMode	  "normal"
+  Solver		  "ode5"
+  SolverMode		  "Auto"
+  StartTime		  "0.0"
+  StopTime		  "200"
+  MaxOrder		  5
+  MaxStep		  "auto"
+  MinStep		  "auto"
+  MaxNumMinSteps	  "-1"
+  InitialStep		  "auto"
+  FixedStep		  "dt"
+  RelTol		  "1e-3"
+  AbsTol		  "auto"
+  OutputOption		  "RefineOutputTimes"
+  OutputTimes		  "[]"
+  Refine		  "1"
+  LoadExternalInput	  off
+  ExternalInput		  "[t, u]"
+  LoadInitialState	  off
+  InitialState		  "xInitial"
+  SaveTime		  off
+  TimeSaveName		  "tout"
+  SaveState		  off
+  StateSaveName		  "xout"
+  SaveOutput		  off
+  OutputSaveName	  "yout"
+  SaveFinalState	  off
+  FinalStateName	  "xFinal"
+  SaveFormat		  "Array"
+  Decimation		  "1"
+  LimitDataPoints	  on
+  MaxDataPoints		  "1000"
+  SignalLoggingName	  "sigsOut"
+  ConsistencyChecking	  "warning"
+  ArrayBoundsChecking	  "warning"
+  AlgebraicLoopMsg	  "warning"
+  BlockPriorityViolationMsg "warning"
+  MinStepSizeMsg	  "warning"
+  InheritedTsInSrcMsg	  "warning"
+  DiscreteInheritContinuousMsg "warning"
+  MultiTaskRateTransMsg	  "error"
+  SingleTaskRateTransMsg  "warning"
+  CheckForMatrixSingularity "warning"
+  IntegerOverflowMsg	  "warning"
+  Int32ToFloatConvMsg	  "warning"
+  ParameterDowncastMsg	  "error"
+  ParameterOverflowMsg	  "error"
+  ParameterPrecisionLossMsg "warning"
+  UnderSpecifiedDataTypeMsg "none"
+  UnnecessaryDatatypeConvMsg "warning"
+  VectorMatrixConversionMsg "none"
+  InvalidFcnCallConnMsg	  "error"
+  SignalLabelMismatchMsg  "warning"
+  UnconnectedInputMsg	  "warning"
+  UnconnectedOutputMsg	  "warning"
+  UnconnectedLineMsg	  "warning"
+  SfunCompatibilityCheckMsg "warning"
+  RTWInlineParameters	  off
+  BlockReductionOpt	  on
+  BooleanDataType	  on
+  ConditionallyExecuteInputs on
+  ParameterPooling	  on
+  OptimizeBlockIOStorage  off
+  ZeroCross		  on
+  AssertionControl	  "UseLocalSettings"
+  ProdHWDeviceType	  "Microprocessor"
+  ProdHWWordLengths	  "8,16,32,32"
+  RTWSystemTargetFile	  "xpctarget.tlc"
+  RTWTemplateMakefile	  "xpc_default_tmf"
+  RTWMakeCommand	  "make_rtw"
+  RTWGenerateCodeOnly	  off
+  RTWRetainRTWFile	  off
+  TLCProfiler		  off
+  TLCDebug		  off
+  TLCCoverage		  off
+  TLCAssertion		  off
+  RTWOptions		  "-aEnforceIntegerDowncast=0 -aExtMode=1 -aFoldNonRol"
+"ledExpr=0 -aForceParamTrailComments=0 -aGenerateComments=1 -aGenerateReport=1"
+" -aIncDataTypeInIds=0 -aIncHierarchyInIds=0 -aInlineInvariantSignals=0 -aInli"
+"nedPrmAccess=\"Literals\" -aLocalBlockOutputs=0 -aMaxRTWIdLen=31 -aPrefixMode"
+"lToSubsysFcnNames=1 -aRL32IRQSourceModifier=\"Timer\" -aRL32LogBufSizeModifie"
+"r=100000 -aRL32LogTETModifier=1 -aRL32ModeModifier=\"Real-Time\" -aRL32Object"
+"Name=\"tg\" -aRTWVerbose=1 -aRollThreshold=5 -aShowEliminatedStatements=0 -ax"
+"PCIOIRQSlot=-1 -axPCIRQSourceBoard=\"None/Other\" -axpcDblBuff=0 -axpcObjCom="
+"0"
+  BlockDefaults {
+    Orientation		    "right"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+  }
+  BlockParameterDefaults {
+    Block {
+      BlockType		      Abs
+      SaturateOnIntegerOverflow	on
+      ZeroCross		      on
+    }
+    Block {
+      BlockType		      Actuator
+      SubClassName	      "unknown"
+      PortType		      "blob"
+    }
+    Block {
+      BlockType		      BusSelector
+      MuxedOutput	      off
+    }
+    Block {
+      BlockType		      BusCreator
+      Inputs		      "4"
+      DisplayOption	      "none"
+    }
+    Block {
+      BlockType		      Clock
+      DisplayTime	      off
+    }
+    Block {
+      BlockType		      Constant
+      Value		      "1"
+      VectorParams1D	      on
+      ShowAdditionalParam     off
+      OutDataTypeMode	      "Inherit from 'Constant value'"
+      OutDataType	      "sfix(16)"
+      ConRadixGroup	      "Use specified scaling"
+      OutScaling	      "2^0"
+    }
+    Block {
+      BlockType		      DataTypeConversion
+      DataType		      "auto"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      Demux
+      Outputs		      "4"
+      DisplayOption	      "none"
+      BusSelectionMode	      off
+    }
+    Block {
+      BlockType		      DiscreteIntegrator
+      IntegratorMethod	      "Forward Euler"
+      ExternalReset	      "none"
+      InitialConditionSource  "internal"
+      InitialCondition	      "0"
+      LimitOutput	      off
+      UpperSaturationLimit    "inf"
+      LowerSaturationLimit    "-inf"
+      ShowSaturationPort      off
+      ShowStatePort	      off
+      SampleTime	      "1"
+      RTWStateStorageClass    "Auto"
+    }
+    Block {
+      BlockType		      DiscreteStateSpace
+      A			      "1"
+      B			      "1"
+      C			      "1"
+      D			      "1"
+      X0		      "0"
+      SampleTime	      "1"
+      Realization	      "auto"
+      RTWStateStorageClass    "Auto"
+    }
+    Block {
+      BlockType		      DiscreteTransferFcn
+      Numerator		      "[1]"
+      Denominator	      "[1 0.5]"
+      SampleTime	      "1"
+      Realization	      "auto"
+      RTWStateStorageClass    "Auto"
+    }
+    Block {
+      BlockType		      EnablePort
+      StatesWhenEnabling      "held"
+      ShowOutputPort	      off
+      ZeroCross		      on
+    }
+    Block {
+      BlockType		      From
+    }
+    Block {
+      BlockType		      Fcn
+      Expr		      "sin(u[1])"
+    }
+    Block {
+      BlockType		      Gain
+      Gain		      "1"
+      Multiplication	      "Element-wise(K.*u)"
+      ShowAdditionalParam     off
+      ParameterDataTypeMode   "Same as input"
+      ParameterDataType	      "sfix(16)"
+      ParameterScalingMode    "Best Precision: Matrix-wise"
+      ParameterScaling	      "2^0"
+      OutDataTypeMode	      "Same as input"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      Goto
+    }
+    Block {
+      BlockType		      Ground
+    }
+    Block {
+      BlockType		      Inport
+      Port		      "1"
+      PortDimensions	      "-1"
+      SampleTime	      "-1"
+      ShowAdditionalParam     off
+      LatchInput	      off
+      DataType		      "auto"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      Integrator
+      ExternalReset	      "none"
+      InitialConditionSource  "internal"
+      InitialCondition	      "0"
+      LimitOutput	      off
+      UpperSaturationLimit    "inf"
+      LowerSaturationLimit    "-inf"
+      ShowSaturationPort      off
+      ShowStatePort	      off
+      AbsoluteTolerance	      "auto"
+      ZeroCross		      on
+    }
+    Block {
+      BlockType		      Logic
+      Operator		      "AND"
+      Inputs		      "2"
+      ShowAdditionalParam     off
+      AllPortsSameDT	      on
+      OutDataTypeMode	      "Logical (see Advanced Sim. Parameters)"
+      LogicDataType	      "uint(8)"
+    }
+    Block {
+      BlockType		      Math
+      Operator		      "exp"
+      OutputSignalType	      "auto"
+    }
+    Block {
+      BlockType		      Memory
+      X0		      "0"
+      InheritSampleTime	      off
+      LinearizeMemory	      off
+      RTWStateStorageClass    "Auto"
+    }
+    Block {
+      BlockType		      Mux
+      Inputs		      "4"
+      DisplayOption	      "none"
+    }
+    Block {
+      BlockType		      Outport
+      Port		      "1"
+      OutputWhenDisabled      "held"
+      InitialOutput	      "[]"
+    }
+    Block {
+      BlockType		      PMComponent
+      SubClassName	      "unknown"
+      PortType		      "blob"
+    }
+    Block {
+      BlockType		      PMIOPort
+    }
+    Block {
+      BlockType		      Product
+      Inputs		      "2"
+      Multiplication	      "Element-wise(.*)"
+      ShowAdditionalParam     off
+      InputSameDT	      on
+      OutDataTypeMode	      "Same as first input"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      RelationalOperator
+      Operator		      ">="
+      ShowAdditionalParam     off
+      InputSameDT	      on
+      LogicOutDataTypeMode    "Logical (see Advanced Sim. Parameters)"
+      LogicDataType	      "uint(8)"
+      ZeroCross		      on
+    }
+    Block {
+      BlockType		      Saturate
+      UpperLimit	      "0.5"
+      LowerLimit	      "-0.5"
+      LinearizeAsGain	      on
+      ZeroCross		      on
+    }
+    Block {
+      BlockType		      Scope
+      Floating		      off
+      ModelBased	      off
+      TickLabels	      "OneTimeTick"
+      ZoomMode		      "on"
+      Grid		      "on"
+      TimeRange		      "auto"
+      YMin		      "-5"
+      YMax		      "5"
+      SaveToWorkspace	      off
+      SaveName		      "ScopeData"
+      LimitDataPoints	      on
+      MaxDataPoints	      "5000"
+      Decimation	      "1"
+      SampleInput	      off
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Selector
+      InputType		      "Vector"
+      ElementSrc	      "Internal"
+      Elements		      "1"
+      RowSrc		      "Internal"
+      Rows		      "1"
+      ColumnSrc		      "Internal"
+      Columns		      "1"
+      InputPortWidth	      "-1"
+    }
+    Block {
+      BlockType		      Sensor
+      SubClassName	      "unknown"
+      PortType		      "blob"
+    }
+    Block {
+      BlockType		      "S-Function"
+      FunctionName	      "system"
+      PortCounts	      "[]"
+      SFunctionModules	      "''"
+    }
+    Block {
+      BlockType		      SubSystem
+      ShowPortLabels	      on
+      Permissions	      "ReadWrite"
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      SimViewingDevice	      off
+      DataTypeOverride	      "UseLocalSettings"
+      MinMaxOverflowLogging   "UseLocalSettings"
+    }
+    Block {
+      BlockType		      Sum
+      IconShape		      "rectangular"
+      Inputs		      "++"
+      ShowAdditionalParam     off
+      InputSameDT	      on
+      OutDataTypeMode	      "Same as first input"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      Switch
+      Criteria		      "u2 >= Threshold"
+      Threshold		      "0"
+      ShowAdditionalParam     off
+      InputSameDT	      on
+      OutDataTypeMode	      "Inherit via internal rule"
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      ZeroCross		      on
+    }
+    Block {
+      BlockType		      Terminator
+    }
+    Block {
+      BlockType		      TriggerPort
+      TriggerType	      "rising"
+      ShowOutputPort	      off
+      OutputDataType	      "auto"
+      ZeroCross		      on
+    }
+    Block {
+      BlockType		      Trigonometry
+      Operator		      "sin"
+      OutputSignalType	      "auto"
+    }
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  System {
+    Name		    "Helicopter"
+    Location		    [347, 76, 1016, 457]
+    Open		    on
+    ModelBrowserVisibility  on
+    ModelBrowserWidth	    207
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "usletter"
+    PaperUnits		    "inches"
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    BlocksetDataString	    "gravity_vector|1|0|1e-3|1|1e-3|1|2|1e-4|1e-4|0|0|"
+"1|1e-5|Deprecated|0|0|1||1|0"
+    Block {
+      BlockType		      Reference
+      Name		      "Controller"
+      Ports		      [1, 1]
+      Position		      [80, 108, 185, 172]
+      BackgroundColor	      "green"
+      SourceBlock	      "HelicopterBlockset/Controller"
+      SourceType	      "SubSystem"
+      ShowPortLabels	      on
+      Permissions	      "ReadWrite"
+      TreatAsAtomicUnit	      on
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      SimViewingDevice	      off
+      DataTypeOverride	      "UseLocalSettings"
+      MinMaxOverflowLogging   "UseLocalSettings"
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Displays"
+      Ports		      [1]
+      Position		      [430, 113, 485, 167]
+      BackgroundColor	      "yellow"
+      TreatAsAtomicUnit	      off
+      System {
+	Name			"Displays"
+	Location		[239, 91, 936, 660]
+	Open			off
+	ModelBrowserVisibility	on
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "Bus Input"
+	  Position		  [55, 187, 85, 203]
+	  BackgroundColor	  "yellow"
+	}
+	Block {
+	  BlockType		  BusSelector
+	  Name			  "Bus\nSelector"
+	  Ports			  [1, 5]
+	  Position		  [115, 49, 125, 341]
+	  BackgroundColor	  "yellow"
+	  ShowName		  off
+	  OutputSignals		  "Body Pos,Body Vel,Speed,VR Data,Euler RPY"
+	  Port {
+	    PortNumber		    1
+	    Name		    "<Body Pos>"
+	    TestPoint		    off
+	    LinearAnalysisOutput    off
+	    LinearAnalysisInput	    off
+	    RTWStorageClass	    "Auto"
+	    DataLogging		    off
+	    DataLoggingNameMode	    "SignalName"
+	    DataLoggingDecimateData off
+	    DataLoggingDecimation   "2"
+	    DataLoggingLimitDataPoints off
+	    DataLoggingMaxPoints    "5000"
+	  }
+	  Port {
+	    PortNumber		    2
+	    Name		    "<Body Vel>"
+	    TestPoint		    off
+	    LinearAnalysisOutput    off
+	    LinearAnalysisInput	    off
+	    RTWStorageClass	    "Auto"
+	    DataLogging		    off
+	    DataLoggingNameMode	    "SignalName"
+	    DataLoggingDecimateData off
+	    DataLoggingDecimation   "2"
+	    DataLoggingLimitDataPoints off
+	    DataLoggingMaxPoints    "5000"
+	  }
+	  Port {
+	    PortNumber		    3
+	    Name		    "<Speed>"
+	    TestPoint		    off
+	    LinearAnalysisOutput    off
+	    LinearAnalysisInput	    off
+	    RTWStorageClass	    "Auto"
+	    DataLogging		    off
+	    DataLoggingNameMode	    "SignalName"
+	    DataLoggingDecimateData off
+	    DataLoggingDecimation   "2"
+	    DataLoggingLimitDataPoints off
+	    DataLoggingMaxPoints    "5000"
+	  }
+	  Port {
+	    PortNumber		    4
+	    Name		    "<VR Data>"
+	    TestPoint		    off
+	    LinearAnalysisOutput    off
+	    LinearAnalysisInput	    off
+	    RTWStorageClass	    "Auto"
+	    DataLogging		    off
+	    DataLoggingNameMode	    "SignalName"
+	    DataLoggingDecimateData off
+	    DataLoggingDecimation   "2"
+	    DataLoggingLimitDataPoints off
+	    DataLoggingMaxPoints    "5000"
+	  }
+	  Port {
+	    PortNumber		    5
+	    Name		    "<Euler RPY>"
+	    TestPoint		    off
+	    LinearAnalysisOutput    off
+	    LinearAnalysisInput	    off
+	    RTWStorageClass	    "Auto"
+	    DataLogging		    off
+	    DataLoggingNameMode	    "SignalName"
+	    DataLoggingDecimateData off
+	    DataLoggingDecimation   "2"
+	    DataLoggingLimitDataPoints off
+	    DataLoggingMaxPoints    "5000"
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Display Subsystem"
+	  Ports			  [5]
+	  Position		  [265, 45, 360, 345]
+	  BackgroundColor	  "yellow"
+	  TreatAsAtomicUnit	  off
+	  System {
+	    Name		    "Display Subsystem"
+	    Location		    [239, 91, 936, 660]
+	    Open		    off
+	    ModelBrowserVisibility  on
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Body Pos"
+	      Position		      [25, 47, 55, 63]
+	      BackgroundColor	      "yellow"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Body Vel"
+	      Position		      [25, 328, 55, 342]
+	      BackgroundColor	      "yellow"
+	      Port		      "2"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Speed"
+	      Position		      [25, 183, 55, 197]
+	      BackgroundColor	      "yellow"
+	      Port		      "3"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "VR Data"
+	      Position		      [25, 383, 55, 397]
+	      BackgroundColor	      "yellow"
+	      Port		      "4"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Euler RPY"
+	      Position		      [25, 213, 55, 227]
+	      BackgroundColor	      "yellow"
+	      Port		      "5"
+	    }
+	    Block {
+	      BlockType		      Demux
+	      Name		      "Demux1"
+	      Ports		      [1, 3]
+	      Position		      [220, 29, 225, 81]
+	      BackgroundColor	      "yellow"
+	      ShowName		      off
+	      Outputs		      "3"
+	    }
+	    Block {
+	      BlockType		      Scope
+	      Name		      "Euler"
+	      Ports		      [1]
+	      Position		      [105, 264, 135, 296]
+	      BackgroundColor	      "yellow"
+	      Location		      [708, 136, 1019, 368]
+	      Open		      off
+	      NumInputPorts	      "1"
+	      ZoomMode		      "yonly"
+	      List {
+		ListType		AxesTitles
+		axes1			"%<SignalLabel>"
+	      }
+	      List {
+		ListType		SelectedSignals
+		axes1			""
+	      }
+	      TimeRange		      "200"
+	      YMin		      "-10"
+	      YMax		      "10"
+	      SaveName		      "ScopeData1"
+	      DataFormat	      "StructureWithTime"
+	      LimitDataPoints	      off
+	    }
+	    Block {
+	      BlockType		      Gain
+	      Name		      "Gain"
+	      Position		      [165, 40, 200, 70]
+	      BackgroundColor	      "yellow"
+	      ShowName		      off
+	      Gain		      "-1"
+	    }
+	    Block {
+	      BlockType		      Terminator
+	      Name		      "Hover Yaw1"
+	      Position		      [260, 60, 280, 80]
+	      BackgroundColor	      "yellow"
+	      ShowName		      off
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "Instrument Data"
+	      Ports		      [3]
+	      Position		      [105, 142, 165, 238]
+	      BackgroundColor	      "yellow"
+	      TreatAsAtomicUnit	      off
+	      System {
+		Name			"Instrument Data"
+		Location		[241, 131, 949, 668]
+		Open			off
+		ModelBrowserVisibility	on
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "Body Pos"
+		  Position		  [20, 68, 50, 82]
+		  BackgroundColor	  "yellow"
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "Speed"
+		  Position		  [20, 168, 50, 182]
+		  BackgroundColor	  "yellow"
+		  Port			  "2"
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "Euler"
+		  Position		  [20, 303, 50, 317]
+		  BackgroundColor	  "yellow"
+		  Port			  "3"
+		}
+		Block {
+		  BlockType		  Reference
+		  Name			  "Altimeter"
+		  Tag			  "010"
+		  Ports			  [1]
+		  Position		  [180, 91, 240, 129]
+		  BackgroundColor	  "yellow"
+		  SourceBlock		  "dnglibv1/ActiveX\nControl"
+		  SourceType		  "ActiveX Block"
+		  progid		  "Compass"
+		  connect		  "input"
+		  input			  "Value"
+		  init_fcn		  "Helicopter/Displays/Display Subsyst"
+"em/Instruments/Altitude (m)"
+		  inblock		  off
+		  border		  on
+		  dialOut		  "0"
+		  updateParam		  "0"
+		}
+		Block {
+		  BlockType		  Clock
+		  Name			  "Clock"
+		  Position		  [25, 460, 45, 480]
+		  BackgroundColor	  "yellow"
+		  Decimation		  "10"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant"
+		  Position		  [150, 381, 185, 399]
+		  BackgroundColor	  "yellow"
+		  ShowName		  off
+		  Value			  "0"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant1"
+		  Position		  [150, 411, 185, 429]
+		  BackgroundColor	  "yellow"
+		  ShowName		  off
+		  Value			  "360"
+		}
+		Block {
+		  BlockType		  Demux
+		  Name			  "Demux1"
+		  Ports			  [1, 3]
+		  Position		  [85, 20, 90, 130]
+		  BackgroundColor	  "yellow"
+		  ShowName		  off
+		  Outputs		  "3"
+		}
+		Block {
+		  BlockType		  Demux
+		  Name			  "Demux2"
+		  Ports			  [1, 3]
+		  Position		  [85, 228, 90, 392]
+		  BackgroundColor	  "yellow"
+		  ShowName		  off
+		  Outputs		  "3"
+		}
+		Block {
+		  BlockType		  Reference
+		  Name			  "Flight Time"
+		  Tag			  "010"
+		  Ports			  [1]
+		  Position		  [130, 451, 190, 489]
+		  BackgroundColor	  "yellow"
+		  SourceBlock		  "dnglibv1/ActiveX\nControl"
+		  SourceType		  "ActiveX Block"
+		  progid		  "Compass"
+		  connect		  "input"
+		  input			  "Value"
+		  init_fcn		  "Helicopter/Displays/Display Subsyst"
+"em/Instruments/Flight Time (sec)"
+		  inblock		  off
+		  border		  on
+		  dialOut		  "0"
+		  updateParam		  "0"
+		}
+		Block {
+		  BlockType		  Gain
+		  Name			  "Gain"
+		  Position		  [120, 95, 150, 125]
+		  BackgroundColor	  "yellow"
+		  ShowName		  off
+		  Gain			  "-1"
+		}
+		Block {
+		  BlockType		  Reference
+		  Name			  "Heading"
+		  Tag			  "010"
+		  Ports			  [1]
+		  Position		  [315, 346, 375, 384]
+		  BackgroundColor	  "yellow"
+		  SourceBlock		  "dnglibv1/ActiveX\nControl"
+		  SourceType		  "ActiveX Block"
+		  progid		  "Compass"
+		  connect		  "input"
+		  input			  "NeedleValue"
+		  init_fcn		  "Helicopter/Displays/Display Subsyst"
+"em/Instruments/Heading (deg true)"
+		  inblock		  off
+		  border		  on
+		  dialOut		  "0"
+		  updateParam		  "0"
+		}
+		Block {
+		  BlockType		  Reference
+		  Name			  "Pitch Angle"
+		  Tag			  "010"
+		  Ports			  [1]
+		  Position		  [130, 291, 190, 329]
+		  BackgroundColor	  "yellow"
+		  SourceBlock		  "dnglibv1/ActiveX\nControl"
+		  SourceType		  "ActiveX Block"
+		  progid		  "Compass"
+		  connect		  "input"
+		  input			  "NeedleValue"
+		  init_fcn		  "Helicopter/Displays/Display Subsyst"
+"em/Instruments/Pitch Angle (deg)"
+		  inblock		  off
+		  border		  on
+		  dialOut		  "0"
+		  updateParam		  "0"
+		}
+		Block {
+		  BlockType		  Reference
+		  Name			  "Roll Angle"
+		  Tag			  "010"
+		  Ports			  [1]
+		  Position		  [130, 236, 190, 274]
+		  BackgroundColor	  "yellow"
+		  SourceBlock		  "dnglibv1/ActiveX\nControl"
+		  SourceType		  "ActiveX Block"
+		  progid		  "Compass"
+		  connect		  "input"
+		  input			  "NeedleValue"
+		  init_fcn		  "Helicopter/Displays/Display Subsyst"
+"em/Instruments/Roll Angle (deg)"
+		  inblock		  off
+		  border		  on
+		  dialOut		  "0"
+		  updateParam		  "0"
+		}
+		Block {
+		  BlockType		  Reference
+		  Name			  "Speedometer"
+		  Tag			  "010"
+		  Ports			  [1]
+		  Position		  [130, 156, 190, 194]
+		  BackgroundColor	  "yellow"
+		  SourceBlock		  "dnglibv1/ActiveX\nControl"
+		  SourceType		  "ActiveX Block"
+		  progid		  "Compass"
+		  connect		  "input"
+		  input			  "Value"
+		  init_fcn		  "Helicopter/Displays/Display Subsyst"
+"em/Instruments/Speed (m//sec)"
+		  inblock		  off
+		  border		  on
+		  dialOut		  "0"
+		  updateParam		  "0"
+		}
+		Block {
+		  BlockType		  Sum
+		  Name			  "Sum"
+		  Ports			  [2, 1]
+		  Position		  [265, 355, 285, 375]
+		  BackgroundColor	  "yellow"
+		  ShowName		  off
+		  IconShape		  "round"
+		  Inputs		  "|++"
+		  InputSameDT		  off
+		  OutDataTypeMode	  "Inherit via internal rule"
+		}
+		Block {
+		  BlockType		  Switch
+		  Name			  "Switch"
+		  Position		  [215, 380, 245, 430]
+		  BackgroundColor	  "yellow"
+		  InputSameDT		  off
+		}
+		Block {
+		  BlockType		  Terminator
+		  Name			  "Terminator1"
+		  Position		  [125, 65, 145, 85]
+		  BackgroundColor	  "yellow"
+		  ShowName		  off
+		}
+		Block {
+		  BlockType		  Terminator
+		  Name			  "Terminator2"
+		  Position		  [125, 30, 145, 50]
+		  BackgroundColor	  "yellow"
+		  ShowName		  off
+		}
+		Line {
+		  SrcBlock		  "Euler"
+		  SrcPort		  1
+		  DstBlock		  "Demux2"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Demux2"
+		  SrcPort		  3
+		  Points		  [0, 0; 30, 0]
+		  Branch {
+		    Points		    [0, 40]
+		    DstBlock		    "Switch"
+		    DstPort		    2
+		  }
+		  Branch {
+		    DstBlock		    "Sum"
+		    DstPort		    1
+		  }
+		}
+		Line {
+		  SrcBlock		  "Demux2"
+		  SrcPort		  1
+		  DstBlock		  "Roll Angle"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Demux2"
+		  SrcPort		  2
+		  DstBlock		  "Pitch Angle"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Clock"
+		  SrcPort		  1
+		  DstBlock		  "Flight Time"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Demux1"
+		  SrcPort		  1
+		  DstBlock		  "Terminator2"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Demux1"
+		  SrcPort		  2
+		  DstBlock		  "Terminator1"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Body Pos"
+		  SrcPort		  1
+		  DstBlock		  "Demux1"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Demux1"
+		  SrcPort		  3
+		  DstBlock		  "Gain"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Gain"
+		  SrcPort		  1
+		  DstBlock		  "Altimeter"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Constant"
+		  SrcPort		  1
+		  DstBlock		  "Switch"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Constant1"
+		  SrcPort		  1
+		  DstBlock		  "Switch"
+		  DstPort		  3
+		}
+		Line {
+		  SrcBlock		  "Switch"
+		  SrcPort		  1
+		  Points		  [25, 0]
+		  DstBlock		  "Sum"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "Speed"
+		  SrcPort		  1
+		  DstBlock		  "Speedometer"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Sum"
+		  SrcPort		  1
+		  DstBlock		  "Heading"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "Instruments"
+	      Ports		      []
+	      Position		      [310, 137, 370, 233]
+	      BackgroundColor	      "yellow"
+	      TreatAsAtomicUnit	      off
+	      System {
+		Name			"Instruments"
+		Location		[239, 91, 936, 660]
+		Open			off
+		ModelBrowserVisibility	on
+		ModelBrowserWidth	207
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		ZoomFactor		"96"
+		Block {
+		  BlockType		  Reference
+		  Name			  "Altitude (m)"
+		  Ports			  []
+		  Position		  [105, 20, 260, 90]
+		  SourceBlock		  "dnglibv1/ActiveX\nControl"
+		  SourceType		  "ActiveX Block"
+		  progid		  "mwnumled.numledctrl.1"
+		  connect		  "neither"
+		  input			  "Value"
+		  init			  "hActx.configuration='Numeric LED\\P"
+"lusMinus XX.XXX';hActx.Digits=6;hActx.Decimals=3;hActx.FixedDecimal=1;hActx.v"
+"alue=-317.489;hActx.SegmentWidth=3;"
+		  inblock		  on
+		  border		  on
+		  dialOut		  "0"
+		  updateParam		  "0"
+		}
+		Block {
+		  BlockType		  Reference
+		  Name			  "Flight Time (sec)"
+		  Ports			  []
+		  Position		  [515, 20, 680, 90]
+		  SourceBlock		  "dnglibv1/ActiveX\nControl"
+		  SourceType		  "ActiveX Block"
+		  progid		  "mwnumled.numledctrl.1"
+		  connect		  "neither"
+		  input			  "Value"
+		  init			  "hActx.Digits=6;hActx.Decimals=2;hAc"
+"tx.FixedDecimal=1;hActx.value=1234.56;"
+		  inblock		  on
+		  border		  on
+		  dialOut		  "0"
+		  updateParam		  "0"
+		}
+		Block {
+		  BlockType		  Reference
+		  Name			  "Heading (deg true)"
+		  Ports			  []
+		  Position		  [505, 141, 690, 329]
+		  SourceBlock		  "dnglibv1/ActiveX\nControl"
+		  SourceType		  "ActiveX Block"
+		  progid		  "mwagauge.agaugectrl.1"
+		  connect		  "neither"
+		  input			  "NeedleValue"
+		  init			  "hActx.configuration='Angular Gauge"
+"\\Compass';"
+		  inblock		  on
+		  border		  on
+		  dialOut		  "0"
+		  updateParam		  "0"
+		}
+		Block {
+		  BlockType		  Reference
+		  Name			  "Pitch Angle (deg)"
+		  Ports			  []
+		  Position		  [365, 141, 475, 249]
+		  SourceBlock		  "dnglibv1/ActiveX\nControl"
+		  SourceType		  "ActiveX Block"
+		  progid		  "mwagauge.agaugectrl.1"
+		  connect		  "neither"
+		  input			  "NeedleValue"
+		  inblock		  on
+		  border		  on
+		  dialOut		  "0"
+		  updateParam		  "0"
+		}
+		Block {
+		  BlockType		  Reference
+		  Name			  "Roll Angle (deg)"
+		  Ports			  []
+		  Position		  [195, 141, 305, 249]
+		  SourceBlock		  "dnglibv1/ActiveX\nControl"
+		  SourceType		  "ActiveX Block"
+		  progid		  "mwagauge.agaugectrl.1"
+		  connect		  "neither"
+		  input			  "NeedleValue"
+		  inblock		  on
+		  border		  on
+		  dialOut		  "0"
+		  updateParam		  "0"
+		}
+		Block {
+		  BlockType		  Reference
+		  Name			  "Speed (m/sec)"
+		  Ports			  []
+		  Position		  [305, 20, 460, 90]
+		  SourceBlock		  "dnglibv1/ActiveX\nControl"
+		  SourceType		  "ActiveX Block"
+		  progid		  "mwnumled.numledctrl.1"
+		  connect		  "neither"
+		  input			  "Value"
+		  init			  "hActx.configuration='Numeric LED\\P"
+"lusMinus XX.XXX';hActx.Digits=6;hActx.Decimals=3;hActx.FixedDecimal=1;hActx.v"
+"alue=-317.489;hActx.SegmentWidth=3;"
+		  inblock		  on
+		  border		  on
+		  dialOut		  "0"
+		  updateParam		  "0"
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      Scope
+	      Name		      "Position"
+	      Ports		      [1]
+	      Position		      [105, 84, 135, 116]
+	      BackgroundColor	      "yellow"
+	      Location		      [377, 498, 701, 737]
+	      Open		      on
+	      NumInputPorts	      "1"
+	      ZoomMode		      "xonly"
+	      List {
+		ListType		AxesTitles
+		axes1			"%<SignalLabel>"
+	      }
+	      List {
+		ListType		SelectedSignals
+		axes1			""
+	      }
+	      TimeRange		      "200"
+	      YMin		      "-200"
+	      YMax		      "200"
+	      DataFormat	      "StructureWithTime"
+	      LimitDataPoints	      off
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Trajectory"
+	      Ports		      [2]
+	      Position		      [305, 30, 335, 65]
+	      BackgroundColor	      "yellow"
+	      SourceBlock	      "simulink/Sinks/XY Graph"
+	      SourceType	      "XY scope."
+	      xmin		      "-10"
+	      xmax		      "210"
+	      ymin		      "-10"
+	      ymax		      "210"
+	      st		      "-1"
+	    }
+	    Block {
+	      BlockType		      Scope
+	      Name		      "Velocity"
+	      Ports		      [1]
+	      Position		      [105, 319, 135, 351]
+	      BackgroundColor	      "yellow"
+	      Location		      [706, 497, 1019, 736]
+	      Open		      on
+	      NumInputPorts	      "1"
+	      ZoomMode		      "yonly"
+	      List {
+		ListType		AxesTitles
+		axes1			"%<SignalLabel>"
+	      }
+	      List {
+		ListType		SelectedSignals
+		axes1			""
+	      }
+	      TimeRange		      "200"
+	      YMin		      "-10"
+	      YMax		      "10"
+	      SaveName		      "ScopeData2"
+	      DataFormat	      "StructureWithTime"
+	      LimitDataPoints	      off
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "Virtual Reality"
+	      Ports		      [1]
+	      Position		      [105, 374, 175, 406]
+	      BackgroundColor	      "yellow"
+	      TreatAsAtomicUnit	      off
+	      System {
+		Name			"Virtual Reality"
+		Location		[279, 78, 977, 615]
+		Open			off
+		ModelBrowserVisibility	on
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "VR Data"
+		  Position		  [85, 153, 115, 167]
+		  BackgroundColor	  "yellow"
+		}
+		Block {
+		  BlockType		  Demux
+		  Name			  "Demux1"
+		  Ports			  [1, 6]
+		  Position		  [160, 36, 165, 284]
+		  BackgroundColor	  "black"
+		  ShowName		  off
+		  Outputs		  "[3 9 3 9 3 9]"
+		}
+		Block {
+		  BlockType		  SubSystem
+		  Name			  "VR Display"
+		  Ports			  [6]
+		  Position		  [245, 39, 335, 281]
+		  BackgroundColor	  "yellow"
+		  TreatAsAtomicUnit	  off
+		  System {
+		    Name		    "VR Display"
+		    Location		    [241, 131, 949, 668]
+		    Open		    off
+		    ModelBrowserVisibility  on
+		    ModelBrowserWidth	    200
+		    ScreenColor		    "white"
+		    PaperOrientation	    "landscape"
+		    PaperPositionMode	    "auto"
+		    PaperType		    "usletter"
+		    PaperUnits		    "inches"
+		    ZoomFactor		    "95"
+		    Block {
+		    BlockType		    Inport
+		    Name		    "MR Pos"
+		    Position		    [140, 273, 170, 287]
+		    BackgroundColor	    "yellow"
+		    }
+		    Block {
+		    BlockType		    Inport
+		    Name		    "MR Rotation"
+		    Position		    [260, 198, 290, 212]
+		    BackgroundColor	    "yellow"
+		    Port		    "2"
+		    }
+		    Block {
+		    BlockType		    Inport
+		    Name		    "TR Pos"
+		    Position		    [140, 423, 170, 437]
+		    BackgroundColor	    "yellow"
+		    Port		    "3"
+		    }
+		    Block {
+		    BlockType		    Inport
+		    Name		    "TR Rotation"
+		    Position		    [260, 348, 290, 362]
+		    BackgroundColor	    "yellow"
+		    Port		    "4"
+		    }
+		    Block {
+		    BlockType		    Inport
+		    Name		    "Body Pos"
+		    Position		    [140, 123, 170, 137]
+		    BackgroundColor	    "yellow"
+		    Port		    "5"
+		    }
+		    Block {
+		    BlockType		    Inport
+		    Name		    "Body Rotation"
+		    Position		    [260, 48, 290, 62]
+		    BackgroundColor	    "yellow"
+		    Port		    "6"
+		    }
+		    Block {
+		    BlockType		    Reference
+		    Name		    "Convert from Rotation Matrix to\n"
+"Virtual Reality Toolbox"
+		    Tag			    "Pose2VR"
+		    Ports		    [1, 1]
+		    Position		    [330, 41, 430, 69]
+		    BackgroundColor	    "yellow"
+		    ShowName		    off
+		    SourceBlock		    "mblibv1/Utilities/Convert from Ro"
+"tation Matrix to\nVirtual Reality Toolbox"
+		    SourceType		    "RotationMatrix2VR"
+		    }
+		    Block {
+		    BlockType		    Reference
+		    Name		    "Convert from Rotation Matrix to\n"
+"Virtual Reality Toolbox1"
+		    Tag			    "Pose2VR"
+		    Ports		    [1, 1]
+		    Position		    [330, 341, 430, 369]
+		    BackgroundColor	    "yellow"
+		    ShowName		    off
+		    SourceBlock		    "mblibv1/Utilities/Convert from Ro"
+"tation Matrix to\nVirtual Reality Toolbox"
+		    SourceType		    "RotationMatrix2VR"
+		    }
+		    Block {
+		    BlockType		    Reference
+		    Name		    "Convert from Rotation Matrix to\n"
+"Virtual Reality Toolbox2"
+		    Tag			    "Pose2VR"
+		    Ports		    [1, 1]
+		    Position		    [330, 191, 430, 219]
+		    BackgroundColor	    "yellow"
+		    ShowName		    off
+		    SourceBlock		    "mblibv1/Utilities/Convert from Ro"
+"tation Matrix to\nVirtual Reality Toolbox"
+		    SourceType		    "RotationMatrix2VR"
+		    }
+		    Block {
+		    BlockType		    Math
+		    Name		    "Math\nFunction"
+		    Ports		    [1, 1]
+		    Position		    [450, 40, 480, 70]
+		    BackgroundColor	    "yellow"
+		    ShowName		    off
+		    Operator		    "transpose"
+		    }
+		    Block {
+		    BlockType		    Math
+		    Name		    "Math\nFunction1"
+		    Ports		    [1, 1]
+		    Position		    [450, 190, 480, 220]
+		    BackgroundColor	    "yellow"
+		    ShowName		    off
+		    Operator		    "transpose"
+		    }
+		    Block {
+		    BlockType		    Math
+		    Name		    "Math\nFunction2"
+		    Ports		    [1, 1]
+		    Position		    [450, 340, 480, 370]
+		    BackgroundColor	    "yellow"
+		    ShowName		    off
+		    Operator		    "transpose"
+		    }
+		    Block {
+		    BlockType		    Math
+		    Name		    "Math\nFunction3"
+		    Ports		    [1, 1]
+		    Position		    [135, 350, 165, 380]
+		    BackgroundColor	    "yellow"
+		    ShowName		    off
+		    Operator		    "transpose"
+		    }
+		    Block {
+		    BlockType		    Math
+		    Name		    "Math\nFunction4"
+		    Ports		    [1, 1]
+		    Position		    [135, 500, 165, 530]
+		    BackgroundColor	    "yellow"
+		    ShowName		    off
+		    Operator		    "transpose"
+		    }
+		    Block {
+		    BlockType		    Constant
+		    Name		    "NED to VR1"
+		    Position		    [395, 379, 480, 401]
+		    BackgroundColor	    "yellow"
+		    ShowName		    off
+		    Value		    "ned_rot_to_vr"
+		    }
+		    Block {
+		    BlockType		    Constant
+		    Name		    "NED to VR2"
+		    Position		    [400, 454, 480, 476]
+		    BackgroundColor	    "yellow"
+		    ShowName		    off
+		    Value		    "ned_pos_to_vr"
+		    }
+		    Block {
+		    BlockType		    Constant
+		    Name		    "NED to VR3"
+		    Position		    [395, 79, 480, 101]
+		    BackgroundColor	    "yellow"
+		    ShowName		    off
+		    Value		    "ned_rot_to_vr"
+		    }
+		    Block {
+		    BlockType		    Constant
+		    Name		    "NED to VR4"
+		    Position		    [400, 154, 480, 176]
+		    BackgroundColor	    "yellow"
+		    ShowName		    off
+		    Value		    "ned_pos_to_vr"
+		    }
+		    Block {
+		    BlockType		    Constant
+		    Name		    "NED to VR5"
+		    Position		    [395, 229, 480, 251]
+		    BackgroundColor	    "yellow"
+		    ShowName		    off
+		    Value		    "ned_rot_to_vr"
+		    }
+		    Block {
+		    BlockType		    Constant
+		    Name		    "NED to VR6"
+		    Position		    [400, 304, 480, 326]
+		    BackgroundColor	    "yellow"
+		    ShowName		    off
+		    Value		    "ned_pos_to_vr"
+		    }
+		    Block {
+		    BlockType		    Constant
+		    Name		    "NED to VR7"
+		    Position		    [95, 319, 160, 341]
+		    BackgroundColor	    "yellow"
+		    ShowName		    off
+		    Value		    "mr_offset"
+		    VectorParams1D	    off
+		    }
+		    Block {
+		    BlockType		    Constant
+		    Name		    "NED to VR8"
+		    Position		    [95, 469, 160, 491]
+		    BackgroundColor	    "yellow"
+		    ShowName		    off
+		    Value		    "tr_offset"
+		    VectorParams1D	    off
+		    }
+		    Block {
+		    BlockType		    Product
+		    Name		    "Product1"
+		    Ports		    [2, 1]
+		    Position		    [510, 38, 550, 107]
+		    BackgroundColor	    "yellow"
+		    ShowName		    off
+		    Multiplication	    "Matrix(*)"
+		    InputSameDT		    off
+		    }
+		    Block {
+		    BlockType		    Product
+		    Name		    "Product2"
+		    Ports		    [2, 1]
+		    Position		    [510, 263, 550, 332]
+		    BackgroundColor	    "yellow"
+		    ShowName		    off
+		    Multiplication	    "Matrix(*)"
+		    InputSameDT		    off
+		    }
+		    Block {
+		    BlockType		    Product
+		    Name		    "Product3"
+		    Ports		    [2, 1]
+		    Position		    [510, 338, 550, 407]
+		    BackgroundColor	    "yellow"
+		    ShowName		    off
+		    Multiplication	    "Matrix(*)"
+		    InputSameDT		    off
+		    }
+		    Block {
+		    BlockType		    Product
+		    Name		    "Product4"
+		    Ports		    [2, 1]
+		    Position		    [510, 413, 550, 482]
+		    BackgroundColor	    "yellow"
+		    ShowName		    off
+		    Multiplication	    "Matrix(*)"
+		    InputSameDT		    off
+		    }
+		    Block {
+		    BlockType		    Product
+		    Name		    "Product5"
+		    Ports		    [2, 1]
+		    Position		    [185, 313, 225, 382]
+		    BackgroundColor	    "yellow"
+		    ShowName		    off
+		    Multiplication	    "Matrix(*)"
+		    InputSameDT		    off
+		    }
+		    Block {
+		    BlockType		    Product
+		    Name		    "Product6"
+		    Ports		    [2, 1]
+		    Position		    [510, 113, 550, 182]
+		    BackgroundColor	    "yellow"
+		    ShowName		    off
+		    Multiplication	    "Matrix(*)"
+		    InputSameDT		    off
+		    }
+		    Block {
+		    BlockType		    Product
+		    Name		    "Product7"
+		    Ports		    [2, 1]
+		    Position		    [510, 188, 550, 257]
+		    BackgroundColor	    "yellow"
+		    ShowName		    off
+		    Multiplication	    "Matrix(*)"
+		    InputSameDT		    off
+		    }
+		    Block {
+		    BlockType		    Product
+		    Name		    "Product8"
+		    Ports		    [2, 1]
+		    Position		    [185, 463, 225, 532]
+		    BackgroundColor	    "yellow"
+		    ShowName		    off
+		    Multiplication	    "Matrix(*)"
+		    InputSameDT		    off
+		    }
+		    Block {
+		    BlockType		    Reference
+		    Name		    "Reshape"
+		    Ports		    [1, 1]
+		    Position		    [55, 352, 115, 378]
+		    BackgroundColor	    "yellow"
+		    ShowName		    off
+		    SourceBlock		    "simulink/Math\nOperations/Reshape"
+		    SourceType		    "Reshape"
+		    OutputDimensionality    "Customize"
+		    OutputDimensions	    "[3,3]"
+		    }
+		    Block {
+		    BlockType		    Reference
+		    Name		    "Reshape1"
+		    Ports		    [1, 1]
+		    Position		    [55, 502, 115, 528]
+		    BackgroundColor	    "yellow"
+		    ShowName		    off
+		    SourceBlock		    "simulink/Math\nOperations/Reshape"
+		    SourceType		    "Reshape"
+		    OutputDimensionality    "Customize"
+		    OutputDimensions	    "[3,3]"
+		    }
+		    Block {
+		    BlockType		    Sum
+		    Name		    "Sum"
+		    Ports		    [2, 1]
+		    Position		    [230, 270, 250, 290]
+		    BackgroundColor	    "yellow"
+		    ShowName		    off
+		    IconShape		    "round"
+		    Inputs		    "|++"
+		    InputSameDT		    off
+		    OutDataTypeMode	    "Inherit via internal rule"
+		    }
+		    Block {
+		    BlockType		    Sum
+		    Name		    "Sum1"
+		    Ports		    [2, 1]
+		    Position		    [230, 420, 250, 440]
+		    BackgroundColor	    "yellow"
+		    ShowName		    off
+		    IconShape		    "round"
+		    Inputs		    "|++"
+		    InputSameDT		    off
+		    OutDataTypeMode	    "Inherit via internal rule"
+		    }
+		    Block {
+		    BlockType		    Reference
+		    Name		    "VR Display"
+		    Ports		    [6]
+		    Position		    [585, 39, 740, 486]
+		    BackgroundColor	    "yellow"
+		    SourceBlock		    "vrlib/VR Sink"
+		    SourceType		    "Virtual Reality Sink"
+		    SampleTime		    "-1"
+		    ViewEnable		    on
+		    RemoteChange	    off
+		    RemoteView		    off
+		    FieldsWritten	    "Helicopter.rotation.4#Helicopter."
+"translation.3#Main_Rotor.rotation.4#Main_Rotor.translation.3#Tail_Rotor.rotat"
+"ion.4#Tail_Rotor.translation.3"
+		    WorldFileName	    "helicopter_runway.WRL"
+		    WorldDescription	    "Helicopter"
+		    AutoView		    on
+		    FigureProperties	    "{'Position', 'Name', 'Viewpoint',"
+" 'CameraBound', 'CameraDirection', 'CameraPosition', 'CameraUpVector', 'ZoomF"
+"actor', 'Antialiasing', 'Headlight', 'Lighting', 'PanelMode', 'Textures', 'Tr"
+"ansparency', 'Wireframe', 'NavZones', 'InfoStrip', 'NavMode', 'NavSpeed', ; ["
+"5.0000000000000000e+000  2.5000000000000000e+001  4.0000000000000000e+002  3."
+"2000000000000000e+002], 'Helicopter', 'Observe Helicopter', 'on', [6.25118406"
+"16084752e-002 -9.4108294567115919e-002 -9.9359745303440561e-001], [0.00000000"
+"00000000e+000  0.0000000000000000e+000  0.0000000000000000e+000], [0.00000000"
+"00000000e+000  1.0000000000000000e+000  0.0000000000000000e+000], [1.00000000"
+"00000000e+000], 'off', 'on', 'on', 'halfbar', 'on', 'on', 'off', 'off', 'off'"
+", 'fly', 'normal', ; }"
+		    }
+		    Line {
+		    SrcBlock		    "Convert from Rotation Matrix to\n"
+"Virtual Reality Toolbox2"
+		    SrcPort		    1
+		    DstBlock		    "Math\nFunction1"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "TR Rotation"
+		    SrcPort		    1
+		    DstBlock		    "Convert from Rotation Matrix to\n"
+"Virtual Reality Toolbox1"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "MR Rotation"
+		    SrcPort		    1
+		    DstBlock		    "Convert from Rotation Matrix to\n"
+"Virtual Reality Toolbox2"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "Body Rotation"
+		    SrcPort		    1
+		    Points		    [0, 0; 10, 0]
+		    Branch {
+		    DstBlock		    "Convert from Rotation Matrix to\n"
+"Virtual Reality Toolbox"
+		    DstPort		    1
+		    }
+		    Branch {
+		    Points		    [0, -30; -275, 0; 0, 340]
+		    Branch {
+		    DstBlock		    "Reshape"
+		    DstPort		    1
+		    }
+		    Branch {
+		    Points		    [0, 150]
+		    DstBlock		    "Reshape1"
+		    DstPort		    1
+		    }
+		    }
+		    }
+		    Line {
+		    SrcBlock		    "Convert from Rotation Matrix to\n"
+"Virtual Reality Toolbox"
+		    SrcPort		    1
+		    DstBlock		    "Math\nFunction"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "Math\nFunction"
+		    SrcPort		    1
+		    DstBlock		    "Product1"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "Math\nFunction1"
+		    SrcPort		    1
+		    DstBlock		    "Product7"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "Body Pos"
+		    SrcPort		    1
+		    DstBlock		    "Product6"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "Math\nFunction2"
+		    SrcPort		    1
+		    DstBlock		    "Product3"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "Convert from Rotation Matrix to\n"
+"Virtual Reality Toolbox1"
+		    SrcPort		    1
+		    DstBlock		    "Math\nFunction2"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "NED to VR3"
+		    SrcPort		    1
+		    DstBlock		    "Product1"
+		    DstPort		    2
+		    }
+		    Line {
+		    SrcBlock		    "NED to VR4"
+		    SrcPort		    1
+		    DstBlock		    "Product6"
+		    DstPort		    2
+		    }
+		    Line {
+		    SrcBlock		    "NED to VR5"
+		    SrcPort		    1
+		    DstBlock		    "Product7"
+		    DstPort		    2
+		    }
+		    Line {
+		    SrcBlock		    "NED to VR6"
+		    SrcPort		    1
+		    DstBlock		    "Product2"
+		    DstPort		    2
+		    }
+		    Line {
+		    SrcBlock		    "NED to VR1"
+		    SrcPort		    1
+		    DstBlock		    "Product3"
+		    DstPort		    2
+		    }
+		    Line {
+		    SrcBlock		    "NED to VR2"
+		    SrcPort		    1
+		    DstBlock		    "Product4"
+		    DstPort		    2
+		    }
+		    Line {
+		    SrcBlock		    "MR Pos"
+		    SrcPort		    1
+		    DstBlock		    "Sum"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "Sum"
+		    SrcPort		    1
+		    DstBlock		    "Product2"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "NED to VR7"
+		    SrcPort		    1
+		    DstBlock		    "Product5"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "Product5"
+		    SrcPort		    1
+		    Points		    [10, 0]
+		    DstBlock		    "Sum"
+		    DstPort		    2
+		    }
+		    Line {
+		    SrcBlock		    "Reshape"
+		    SrcPort		    1
+		    DstBlock		    "Math\nFunction3"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "Math\nFunction3"
+		    SrcPort		    1
+		    DstBlock		    "Product5"
+		    DstPort		    2
+		    }
+		    Line {
+		    SrcBlock		    "NED to VR8"
+		    SrcPort		    1
+		    DstBlock		    "Product8"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "Product8"
+		    SrcPort		    1
+		    Points		    [10, 0]
+		    DstBlock		    "Sum1"
+		    DstPort		    2
+		    }
+		    Line {
+		    SrcBlock		    "Reshape1"
+		    SrcPort		    1
+		    DstBlock		    "Math\nFunction4"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "Math\nFunction4"
+		    SrcPort		    1
+		    DstBlock		    "Product8"
+		    DstPort		    2
+		    }
+		    Line {
+		    SrcBlock		    "Sum1"
+		    SrcPort		    1
+		    DstBlock		    "Product4"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "TR Pos"
+		    SrcPort		    1
+		    DstBlock		    "Sum1"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "Product1"
+		    SrcPort		    1
+		    DstBlock		    "VR Display"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "Product6"
+		    SrcPort		    1
+		    DstBlock		    "VR Display"
+		    DstPort		    2
+		    }
+		    Line {
+		    SrcBlock		    "Product7"
+		    SrcPort		    1
+		    DstBlock		    "VR Display"
+		    DstPort		    3
+		    }
+		    Line {
+		    SrcBlock		    "Product2"
+		    SrcPort		    1
+		    DstBlock		    "VR Display"
+		    DstPort		    4
+		    }
+		    Line {
+		    SrcBlock		    "Product3"
+		    SrcPort		    1
+		    DstBlock		    "VR Display"
+		    DstPort		    5
+		    }
+		    Line {
+		    SrcBlock		    "Product4"
+		    SrcPort		    1
+		    DstBlock		    "VR Display"
+		    DstPort		    6
+		    }
+		  }
+		}
+		Line {
+		  SrcBlock		  "VR Data"
+		  SrcPort		  1
+		  DstBlock		  "Demux1"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Demux1"
+		  SrcPort		  1
+		  DstBlock		  "VR Display"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Demux1"
+		  SrcPort		  2
+		  DstBlock		  "VR Display"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "Demux1"
+		  SrcPort		  3
+		  DstBlock		  "VR Display"
+		  DstPort		  3
+		}
+		Line {
+		  SrcBlock		  "Demux1"
+		  SrcPort		  4
+		  DstBlock		  "VR Display"
+		  DstPort		  4
+		}
+		Line {
+		  SrcBlock		  "Demux1"
+		  SrcPort		  5
+		  DstBlock		  "VR Display"
+		  DstPort		  5
+		}
+		Line {
+		  SrcBlock		  "Demux1"
+		  SrcPort		  6
+		  DstBlock		  "VR Display"
+		  DstPort		  6
+		}
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "Demux1"
+	      SrcPort		      3
+	      DstBlock		      "Hover Yaw1"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Demux1"
+	      SrcPort		      1
+	      DstBlock		      "Trajectory"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Demux1"
+	      SrcPort		      2
+	      DstBlock		      "Trajectory"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Gain"
+	      SrcPort		      1
+	      DstBlock		      "Demux1"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Body Vel"
+	      SrcPort		      1
+	      DstBlock		      "Velocity"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Euler RPY"
+	      SrcPort		      1
+	      Points		      [0, 0; 20, 0]
+	      Branch {
+		Points			[0, 60]
+		DstBlock		"Euler"
+		DstPort			1
+	      }
+	      Branch {
+		DstBlock		"Instrument Data"
+		DstPort			3
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "Speed"
+	      SrcPort		      1
+	      DstBlock		      "Instrument Data"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "VR Data"
+	      SrcPort		      1
+	      DstBlock		      "Virtual Reality"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Body Pos"
+	      SrcPort		      1
+	      Points		      [0, 0; 25, 0]
+	      Branch {
+		Points			[0, 45]
+		Branch {
+		  Points		  [0, 60]
+		  DstBlock		  "Instrument Data"
+		  DstPort		  1
+		}
+		Branch {
+		  DstBlock		  "Position"
+		  DstPort		  1
+		}
+	      }
+	      Branch {
+		DstBlock		"Gain"
+		DstPort			1
+	      }
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Gateway Out1"
+	  Ports			  [1, 1]
+	  Position		  [200, 175, 240, 215]
+	  BackgroundColor	  "yellow"
+	  ShowName		  off
+	  SourceBlock		  "fixpt_lib_4/Data Type/Gateway Out"
+	  SourceType		  "Fixed-Point Gateway Out"
+	  OutRealWorld		  "Real World Value"
+	  OutBuiltInType	  "double"
+	  RndMeth		  "Nearest"
+	  DoSatur		  off
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Gateway Out2"
+	  Ports			  [1, 1]
+	  Position		  [200, 115, 240, 155]
+	  BackgroundColor	  "yellow"
+	  ShowName		  off
+	  SourceBlock		  "fixpt_lib_4/Data Type/Gateway Out"
+	  SourceType		  "Fixed-Point Gateway Out"
+	  OutRealWorld		  "Real World Value"
+	  OutBuiltInType	  "double"
+	  RndMeth		  "Nearest"
+	  DoSatur		  off
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Gateway Out3"
+	  Ports			  [1, 1]
+	  Position		  [200, 55, 240, 95]
+	  BackgroundColor	  "yellow"
+	  ShowName		  off
+	  SourceBlock		  "fixpt_lib_4/Data Type/Gateway Out"
+	  SourceType		  "Fixed-Point Gateway Out"
+	  OutRealWorld		  "Real World Value"
+	  OutBuiltInType	  "double"
+	  RndMeth		  "Nearest"
+	  DoSatur		  off
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Gateway Out4"
+	  Ports			  [1, 1]
+	  Position		  [200, 295, 240, 335]
+	  BackgroundColor	  "yellow"
+	  ShowName		  off
+	  SourceBlock		  "fixpt_lib_4/Data Type/Gateway Out"
+	  SourceType		  "Fixed-Point Gateway Out"
+	  OutRealWorld		  "Real World Value"
+	  OutBuiltInType	  "double"
+	  RndMeth		  "Nearest"
+	  DoSatur		  off
+	}
+	Line {
+	  Name			  "<Body Pos>"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Bus\nSelector"
+	  SrcPort		  1
+	  DstBlock		  "Gateway Out3"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "<Body Vel>"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Bus\nSelector"
+	  SrcPort		  2
+	  DstBlock		  "Gateway Out2"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "<Speed>"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Bus\nSelector"
+	  SrcPort		  3
+	  DstBlock		  "Gateway Out1"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "<VR Data>"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Bus\nSelector"
+	  SrcPort		  4
+	  DstBlock		  "Display Subsystem"
+	  DstPort		  4
+	}
+	Line {
+	  Name			  "<Euler RPY>"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Bus\nSelector"
+	  SrcPort		  5
+	  DstBlock		  "Gateway Out4"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Bus Input"
+	  SrcPort		  1
+	  DstBlock		  "Bus\nSelector"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Gateway Out4"
+	  SrcPort		  1
+	  DstBlock		  "Display Subsystem"
+	  DstPort		  5
+	}
+	Line {
+	  SrcBlock		  "Gateway Out1"
+	  SrcPort		  1
+	  DstBlock		  "Display Subsystem"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "Gateway Out2"
+	  SrcPort		  1
+	  DstBlock		  "Display Subsystem"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Gateway Out3"
+	  SrcPort		  1
+	  DstBlock		  "Display Subsystem"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Helicopter"
+      Ports		      [1, 1]
+      Position		      [230, 108, 345, 172]
+      BackgroundColor	      "lightBlue"
+      SourceBlock	      "HelicopterBlockset/Helicopter"
+      SourceType	      "SubSystem"
+      ShowPortLabels	      on
+      Permissions	      "ReadWrite"
+      TreatAsAtomicUnit	      off
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      SimViewingDevice	      off
+      DataTypeOverride	      "UseLocalSettings"
+      MinMaxOverflowLogging   "UseLocalSettings"
+    }
+    Line {
+      SrcBlock		      "Helicopter"
+      SrcPort		      1
+      Points		      [45, 0]
+      Branch {
+	Points			[0, -70; -355, 0; 0, 70]
+	DstBlock		"Controller"
+	DstPort			1
+      }
+      Branch {
+	DstBlock		"Displays"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "Controller"
+      SrcPort		      1
+      DstBlock		      "Helicopter"
+      DstPort		      1
+    }
+    Annotation {
+      Name		      "Helicopter and Controller\nby Jim Ledin, PE\nLe"
+"din Engineering\nwww.ledin.com"
+      Position		      [484, 255]
+      DropShadow	      on
+      FontName		      "Arial"
+      FontSize		      12
+    }
+  }
+}
+
+# Finite State Machines
+# -- File save dated 13-Aug-2003 18:24:36
+#
+#    Stateflow Version 5.1 (R13+) dated Oct 16 2002, 19:29:15
+#
+#
+
+Stateflow {
+
+	machine {
+		id                   		1
+		name                 		"Helicopter"
+		created              		"14-Jun-2003 15:28:53"
+		isLibrary            		0
+		firstTarget          		2
+		sfVersion            		51013001
+	}
+
+	target {
+		id               		2
+		name             		"sfun"
+		description      		"Default Simulink S-Function Target."
+		machine          		1
+		linkNode         		[1 0 3]
+	}
+
+	target {
+		id               		3
+		name             		"rtw"
+		codeFlags        		" comments=1 statebitsets=1 databitsets=1 emitlogicalops=1 el"
+						"seifdetection=1 constantfolding=1 redundantloadelimination=0"
+						" preservenames=0 preservenameswithparent=0 exportcharts=0"
+		machine          		1
+		linkNode         		[1 2 0]
+	}
+}

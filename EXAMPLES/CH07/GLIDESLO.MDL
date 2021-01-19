@@ -1,0 +1,1389 @@
+Model {
+  Name			  "Glideslope"
+  Version		  5.0
+  SaveDefaultBlockParams  on
+  SampleTimeColors	  off
+  LibraryLinkDisplay	  "none"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  ShowStorageClass	  off
+  ExecutionOrder	  off
+  RecordCoverage	  off
+  CovPath		  "/"
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  covSaveCumulativeToWorkspaceVar on
+  CovSaveSingleToWorkspaceVar on
+  CovCumulativeVarName	  "covCumulativeData"
+  CovCumulativeReport	  off
+  DataTypeOverride	  "UseLocalSettings"
+  MinMaxOverflowLogging	  "UseLocalSettings"
+  MinMaxOverflowArchiveMode "Overwrite"
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  Created		  "Thu Jan 02 08:24:17 2003"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "Administrator"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Sat Aug 30 07:05:26 2003"
+  ModelVersionFormat	  "1.%<AutoIncrement:36>"
+  ConfigurationManager	  "None"
+  SimParamPage		  "Solver"
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "MATLABWorkspace"
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  TryForcingSFcnDF	  off
+  ExtModeMexFile	  "ext_comm"
+  ExtModeBatchMode	  off
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  BufferReuse		  on
+  RTWExpressionDepthLimit 5
+  SimulationMode	  "normal"
+  Solver		  "ode45"
+  SolverMode		  "Auto"
+  StartTime		  "0.0"
+  StopTime		  "10.0"
+  MaxOrder		  5
+  MaxStep		  "1e-3"
+  MinStep		  "auto"
+  MaxNumMinSteps	  "-1"
+  InitialStep		  "auto"
+  FixedStep		  "auto"
+  RelTol		  "1e-12"
+  AbsTol		  "1e-12"
+  OutputOption		  "RefineOutputTimes"
+  OutputTimes		  "[]"
+  Refine		  "1"
+  LoadExternalInput	  off
+  ExternalInput		  "[t, u]"
+  LoadInitialState	  off
+  InitialState		  "xInitial"
+  SaveTime		  on
+  TimeSaveName		  "tout"
+  SaveState		  off
+  StateSaveName		  "xout"
+  SaveOutput		  on
+  OutputSaveName	  "yout"
+  SaveFinalState	  off
+  FinalStateName	  "xFinal"
+  SaveFormat		  "Array"
+  Decimation		  "1"
+  LimitDataPoints	  on
+  MaxDataPoints		  "1000"
+  SignalLoggingName	  "sigsOut"
+  ConsistencyChecking	  "none"
+  ArrayBoundsChecking	  "none"
+  AlgebraicLoopMsg	  "warning"
+  BlockPriorityViolationMsg "warning"
+  MinStepSizeMsg	  "warning"
+  InheritedTsInSrcMsg	  "warning"
+  DiscreteInheritContinuousMsg "warning"
+  MultiTaskRateTransMsg	  "error"
+  SingleTaskRateTransMsg  "none"
+  CheckForMatrixSingularity "none"
+  IntegerOverflowMsg	  "warning"
+  Int32ToFloatConvMsg	  "warning"
+  ParameterDowncastMsg	  "error"
+  ParameterOverflowMsg	  "error"
+  ParameterPrecisionLossMsg "warning"
+  UnderSpecifiedDataTypeMsg "none"
+  UnnecessaryDatatypeConvMsg "none"
+  VectorMatrixConversionMsg "none"
+  InvalidFcnCallConnMsg	  "error"
+  SignalLabelMismatchMsg  "none"
+  UnconnectedInputMsg	  "warning"
+  UnconnectedOutputMsg	  "warning"
+  UnconnectedLineMsg	  "warning"
+  SfunCompatibilityCheckMsg "none"
+  RTWInlineParameters	  off
+  BlockReductionOpt	  on
+  BooleanDataType	  on
+  ConditionallyExecuteInputs on
+  ParameterPooling	  on
+  OptimizeBlockIOStorage  on
+  ZeroCross		  on
+  AssertionControl	  "UseLocalSettings"
+  ProdHWDeviceType	  "Microprocessor"
+  ProdHWWordLengths	  "8,16,32,32"
+  RTWSystemTargetFile	  "grt.tlc"
+  RTWTemplateMakefile	  "grt_default_tmf"
+  RTWMakeCommand	  "make_rtw"
+  RTWGenerateCodeOnly	  off
+  RTWRetainRTWFile	  off
+  TLCProfiler		  off
+  TLCDebug		  off
+  TLCCoverage		  off
+  TLCAssertion		  off
+  BlockDefaults {
+    Orientation		    "right"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+  }
+  BlockParameterDefaults {
+    Block {
+      BlockType		      Constant
+      Value		      "1"
+      VectorParams1D	      on
+      ShowAdditionalParam     off
+      OutDataTypeMode	      "Inherit from 'Constant value'"
+      OutDataType	      "sfix(16)"
+      ConRadixGroup	      "Use specified scaling"
+      OutScaling	      "2^0"
+    }
+    Block {
+      BlockType		      Inport
+      Port		      "1"
+      PortDimensions	      "-1"
+      SampleTime	      "-1"
+      ShowAdditionalParam     off
+      LatchInput	      off
+      DataType		      "auto"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      Integrator
+      ExternalReset	      "none"
+      InitialConditionSource  "internal"
+      InitialCondition	      "0"
+      LimitOutput	      off
+      UpperSaturationLimit    "inf"
+      LowerSaturationLimit    "-inf"
+      ShowSaturationPort      off
+      ShowStatePort	      off
+      AbsoluteTolerance	      "auto"
+      ZeroCross		      on
+    }
+    Block {
+      BlockType		      Math
+      Operator		      "exp"
+      OutputSignalType	      "auto"
+    }
+    Block {
+      BlockType		      Outport
+      Port		      "1"
+      OutputWhenDisabled      "held"
+      InitialOutput	      "[]"
+    }
+    Block {
+      BlockType		      Product
+      Inputs		      "2"
+      Multiplication	      "Element-wise(.*)"
+      ShowAdditionalParam     off
+      InputSameDT	      on
+      OutDataTypeMode	      "Same as first input"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      Scope
+      Floating		      off
+      ModelBased	      off
+      TickLabels	      "OneTimeTick"
+      ZoomMode		      "on"
+      Grid		      "on"
+      TimeRange		      "auto"
+      YMin		      "-5"
+      YMax		      "5"
+      SaveToWorkspace	      off
+      SaveName		      "ScopeData"
+      LimitDataPoints	      on
+      MaxDataPoints	      "5000"
+      Decimation	      "1"
+      SampleInput	      off
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      SubSystem
+      ShowPortLabels	      on
+      Permissions	      "ReadWrite"
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      SimViewingDevice	      off
+      DataTypeOverride	      "UseLocalSettings"
+      MinMaxOverflowLogging   "UseLocalSettings"
+    }
+    Block {
+      BlockType		      Sum
+      IconShape		      "rectangular"
+      Inputs		      "++"
+      ShowAdditionalParam     off
+      InputSameDT	      on
+      OutDataTypeMode	      "Same as first input"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      Trigonometry
+      Operator		      "sin"
+      OutputSignalType	      "auto"
+    }
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  System {
+    Name		    "Glideslope"
+    Location		    [84, 126, 680, 485]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "usletter"
+    PaperUnits		    "inches"
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    Block {
+      BlockType		      Inport
+      Name		      "alpha"
+      Position		      [80, 143, 110, 157]
+      BackgroundColor	      "lightBlue"
+    }
+    Block {
+      BlockType		      Inport
+      Name		      "T"
+      Position		      [80, 253, 110, 267]
+      BackgroundColor	      "lightBlue"
+      Port		      "2"
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Aircraft"
+      Ports		      [2, 3]
+      Position		      [275, 153, 350, 277]
+      BackgroundColor	      "yellow"
+      TreatAsAtomicUnit	      off
+      System {
+	Name			"Aircraft"
+	Location		[90, 129, 981, 660]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "alpha"
+	  Position		  [25, 73, 55, 87]
+	  BackgroundColor	  "lightBlue"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "T"
+	  Position		  [25, 158, 55, 172]
+	  BackgroundColor	  "lightBlue"
+	  Port			  "2"
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "*1/m"
+	  Ports			  [2, 1]
+	  Position		  [430, 46, 475, 79]
+	  BackgroundColor	  "green"
+	  InputSameDT		  off
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "*1/mV"
+	  Ports			  [3, 1]
+	  Position		  [430, 163, 475, 197]
+	  BackgroundColor	  "green"
+	  Inputs		  "3"
+	  InputSameDT		  off
+	}
+	Block {
+	  BlockType		  Math
+	  Name			  "1/V"
+	  Ports			  [1, 1]
+	  Position		  [350, 125, 380, 155]
+	  BackgroundColor	  "green"
+	  Operator		  "reciprocal"
+	}
+	Block {
+	  BlockType		  Math
+	  Name			  "1/m"
+	  Ports			  [1, 1]
+	  Position		  [210, 305, 240, 335]
+	  BackgroundColor	  "green"
+	  Operator		  "reciprocal"
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Lift & Drag"
+	  Ports			  [2, 2]
+	  Position		  [210, 175, 250, 235]
+	  BackgroundColor	  "yellow"
+	  TreatAsAtomicUnit	  off
+	  System {
+	    Name		    "Lift & Drag"
+	    Location		    [262, 186, 878, 584]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "alpha"
+	      Position		      [35, 28, 65, 42]
+	      BackgroundColor	      "lightBlue"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "V"
+	      Position		      [35, 188, 65, 202]
+	      BackgroundColor	      "lightBlue"
+	      Port		      "2"
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "Cd*qS"
+	      Ports		      [2, 1]
+	      Position		      [490, 186, 535, 219]
+	      BackgroundColor	      "magenta"
+	      InputSameDT	      off
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Cd0"
+	      Position		      [320, 210, 375, 240]
+	      BackgroundColor	      "yellow"
+	      Value		      "0.025455"
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "Cl*qS"
+	      Ports		      [2, 1]
+	      Position		      [490, 76, 535, 109]
+	      BackgroundColor	      "magenta"
+	      InputSameDT	      off
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Cl0"
+	      Position		      [125, 110, 175, 140]
+	      BackgroundColor	      "yellow"
+	      Value		      "0.8212"
+	    }
+	    Block {
+	      BlockType		      Math
+	      Name		      "Cl^2"
+	      Ports		      [1, 1]
+	      Position		      [260, 175, 290, 205]
+	      BackgroundColor	      "green"
+	      Operator		      "magnitude^2"
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Cla"
+	      Position		      [30, 80, 80, 110]
+	      BackgroundColor	      "yellow"
+	      Value		      "5.105"
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "Cla*alpha"
+	      Ports		      [2, 1]
+	      Position		      [130, 26, 175, 59]
+	      BackgroundColor	      "magenta"
+	      InputSameDT	      off
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "K"
+	      Position		      [250, 115, 300, 145]
+	      BackgroundColor	      "yellow"
+	      Value		      "0.04831"
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "K*Cl^2"
+	      Ports		      [2, 1]
+	      Position		      [330, 141, 375, 174]
+	      BackgroundColor	      "magenta"
+	      InputSameDT	      off
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "S"
+	      Position		      [90, 335, 140, 365]
+	      BackgroundColor	      "yellow"
+	      Value		      "427.8"
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "Sum"
+	      Ports		      [2, 1]
+	      Position		      [200, 75, 220, 95]
+	      BackgroundColor	      "yellow"
+	      ShowName		      off
+	      IconShape		      "round"
+	      Inputs		      "+|+"
+	      InputSameDT	      off
+	      OutDataTypeMode	      "Inherit via internal rule"
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "Sum1"
+	      Ports		      [2, 1]
+	      Position		      [410, 185, 430, 205]
+	      BackgroundColor	      "yellow"
+	      ShowName		      off
+	      IconShape		      "round"
+	      Inputs		      "+|+"
+	      InputSameDT	      off
+	      OutDataTypeMode	      "Inherit via internal rule"
+	    }
+	    Block {
+	      BlockType		      Math
+	      Name		      "V^2"
+	      Ports		      [1, 1]
+	      Position		      [100, 180, 130, 210]
+	      BackgroundColor	      "green"
+	      Operator		      "magnitude^2"
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "constant"
+	      Position		      [90, 280, 140, 310]
+	      BackgroundColor	      "yellow"
+	      Value		      "1/2"
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "qS"
+	      Ports		      [4, 1]
+	      Position		      [190, 258, 235, 292]
+	      BackgroundColor	      "magenta"
+	      Inputs		      "4"
+	      InputSameDT	      off
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "rho"
+	      Position		      [90, 230, 140, 260]
+	      BackgroundColor	      "yellow"
+	      Value		      "1.225"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "L"
+	      Position		      [565, 88, 595, 102]
+	      BackgroundColor	      "lightBlue"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "D"
+	      Position		      [565, 198, 595, 212]
+	      BackgroundColor	      "lightBlue"
+	      Port		      "2"
+	    }
+	    Line {
+	      SrcBlock		      "Cla"
+	      SrcPort		      1
+	      Points		      [10, 0; 0, -45]
+	      DstBlock		      "Cla*alpha"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Cla*alpha"
+	      SrcPort		      1
+	      Points		      [30, 0]
+	      DstBlock		      "Sum"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Cl0"
+	      SrcPort		      1
+	      Points		      [30, 0]
+	      DstBlock		      "Sum"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Sum"
+	      SrcPort		      1
+	      Points		      [10, 0]
+	      Branch {
+		Points			[0, 105]
+		DstBlock		"Cl^2"
+		DstPort			1
+	      }
+	      Branch {
+		DstBlock		"Cl*qS"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "K*Cl^2"
+	      SrcPort		      1
+	      Points		      [40, 0]
+	      DstBlock		      "Sum1"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Cd0"
+	      SrcPort		      1
+	      Points		      [40, 0]
+	      DstBlock		      "Sum1"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "alpha"
+	      SrcPort		      1
+	      DstBlock		      "Cla*alpha"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "V"
+	      SrcPort		      1
+	      DstBlock		      "V^2"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "constant"
+	      SrcPort		      1
+	      Points		      [10, 0; 0, -15]
+	      DstBlock		      "qS"
+	      DstPort		      3
+	    }
+	    Line {
+	      SrcBlock		      "V^2"
+	      SrcPort		      1
+	      Points		      [35, 0; 0, 65]
+	      DstBlock		      "qS"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "S"
+	      SrcPort		      1
+	      Points		      [25, 0; 0, -60]
+	      DstBlock		      "qS"
+	      DstPort		      4
+	    }
+	    Line {
+	      SrcBlock		      "rho"
+	      SrcPort		      1
+	      Points		      [10, 0; 0, 25]
+	      DstBlock		      "qS"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Cl*qS"
+	      SrcPort		      1
+	      DstBlock		      "L"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Sum1"
+	      SrcPort		      1
+	      DstBlock		      "Cd*qS"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Cd*qS"
+	      SrcPort		      1
+	      DstBlock		      "D"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "qS"
+	      SrcPort		      1
+	      Points		      [220, 0; 0, -65]
+	      Branch {
+		DstBlock		"Cd*qS"
+		DstPort			2
+	      }
+	      Branch {
+		Points			[0, -110]
+		DstBlock		"Cl*qS"
+		DstPort			2
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "Cl^2"
+	      SrcPort		      1
+	      Points		      [15, 0; 0, -25]
+	      DstBlock		      "K*Cl^2"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "K"
+	      SrcPort		      1
+	      Points		      [5, 0; 0, 20]
+	      DstBlock		      "K*Cl^2"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum"
+	  Ports			  [3, 1]
+	  Position		  [360, 45, 380, 65]
+	  BackgroundColor	  "yellow"
+	  ShowName		  off
+	  IconShape		  "round"
+	  Inputs		  "-+-"
+	  InputSameDT		  off
+	  OutDataTypeMode	  "Inherit via internal rule"
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum1"
+	  Ports			  [3, 1]
+	  Position		  [355, 210, 375, 230]
+	  BackgroundColor	  "yellow"
+	  ShowName		  off
+	  IconShape		  "round"
+	  Inputs		  "++-"
+	  InputSameDT		  off
+	  OutDataTypeMode	  "Inherit via internal rule"
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum2"
+	  Ports			  [2, 1]
+	  Position		  [635, 280, 655, 300]
+	  BackgroundColor	  "yellow"
+	  ShowName		  off
+	  IconShape		  "round"
+	  Inputs		  "|++"
+	  InputSameDT		  off
+	  OutDataTypeMode	  "Inherit via internal rule"
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Tcos(alpha)\n"
+	  Ports			  [2, 1]
+	  Position		  [215, 101, 260, 134]
+	  BackgroundColor	  "magenta"
+	  InputSameDT		  off
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Tsin(alpha)\n"
+	  Ports			  [2, 1]
+	  Position		  [215, 41, 260, 74]
+	  BackgroundColor	  "magenta"
+	  InputSameDT		  off
+	}
+	Block {
+	  BlockType		  Integrator
+	  Name			  "V\nintegrator"
+	  Ports			  [1, 1]
+	  Position		  [495, 50, 525, 80]
+	  BackgroundColor	  "yellow"
+	  InitialCondition	  "81.8"
+	}
+	Block {
+	  BlockType		  Trigonometry
+	  Name			  "cos(alpha)"
+	  Ports			  [1, 1]
+	  Position		  [120, 95, 150, 125]
+	  BackgroundColor	  "green"
+	  Operator		  "cos"
+	}
+	Block {
+	  BlockType		  Trigonometry
+	  Name			  "cos(gamma)"
+	  Ports			  [1, 1]
+	  Position		  [560, 405, 590, 435]
+	  BackgroundColor	  "green"
+	  Operator		  "cos"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "g"
+	  Position		  [115, 380, 165, 410]
+	  BackgroundColor	  "yellow"
+	  Value			  "9.81"
+	}
+	Block {
+	  BlockType		  Integrator
+	  Name			  "gamma\nintegrator"
+	  Ports			  [1, 1]
+	  Position		  [495, 165, 525, 195]
+	  BackgroundColor	  "yellow"
+	  InitialCondition	  "-3*pi/180"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "gamma_gs"
+	  Position		  [300, 300, 350, 330]
+	  BackgroundColor	  "yellow"
+	  Value			  "3*pi/180"
+	}
+	Block {
+	  BlockType		  Integrator
+	  Name			  "h\nintegrator"
+	  Ports			  [1, 1]
+	  Position		  [750, 270, 780, 300]
+	  BackgroundColor	  "yellow"
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "h derivative\n"
+	  Ports			  [2, 1]
+	  Position		  [680, 266, 725, 299]
+	  BackgroundColor	  "magenta"
+	  InputSameDT		  off
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "m"
+	  Position		  [115, 305, 165, 335]
+	  BackgroundColor	  "yellow"
+	  Value			  "190000"
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "mg"
+	  Ports			  [2, 1]
+	  Position		  [300, 371, 345, 404]
+	  BackgroundColor	  "yellow"
+	  InputSameDT		  off
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "mg*cos(gamma)"
+	  Ports			  [2, 1]
+	  Position		  [680, 396, 725, 429]
+	  BackgroundColor	  "magenta"
+	  InputSameDT		  off
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "mg*sin(gamma)"
+	  Ports			  [2, 1]
+	  Position		  [680, 331, 725, 364]
+	  BackgroundColor	  "magenta"
+	  InputSameDT		  off
+	}
+	Block {
+	  BlockType		  Trigonometry
+	  Name			  "sin(alpha)"
+	  Ports			  [1, 1]
+	  Position		  [120, 35, 150, 65]
+	  BackgroundColor	  "green"
+	}
+	Block {
+	  BlockType		  Trigonometry
+	  Name			  "sin(gamma)"
+	  Ports			  [1, 1]
+	  Position		  [565, 275, 595, 305]
+	  BackgroundColor	  "green"
+	}
+	Block {
+	  BlockType		  Trigonometry
+	  Name			  "tan(gamma_gs)"
+	  Ports			  [1, 1]
+	  Position		  [395, 300, 425, 330]
+	  BackgroundColor	  "green"
+	  Operator		  "tan"
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "tan(gamma_gs)\n*cos(gamma)"
+	  Ports			  [2, 1]
+	  Position		  [475, 306, 520, 339]
+	  BackgroundColor	  "magenta"
+	  InputSameDT		  off
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "V"
+	  Position		  [795, 58, 825, 72]
+	  BackgroundColor	  "lightBlue"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "gamma"
+	  Position		  [800, 173, 830, 187]
+	  BackgroundColor	  "lightBlue"
+	  Port			  "2"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "h"
+	  Position		  [800, 278, 830, 292]
+	  BackgroundColor	  "lightBlue"
+	  Port			  "3"
+	}
+	Line {
+	  SrcBlock		  "m"
+	  SrcPort		  1
+	  Points		  [0, 0; 20, 0]
+	  Branch {
+	    DstBlock		    "1/m"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 60]
+	    DstBlock		    "mg"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "V\nintegrator"
+	  SrcPort		  1
+	  Points		  [-5, 0; 35, 0]
+	  Branch {
+	    Points		    [60, 0]
+	    Branch {
+	      DstBlock		      "V"
+	      DstPort		      1
+	    }
+	    Branch {
+	      Points		      [0, 210]
+	      DstBlock		      "h derivative\n"
+	      DstPort		      1
+	    }
+	  }
+	  Branch {
+	    Points		    [0, 200; -230, 0]
+	    Branch {
+	      Points		      [-140, 0; 0, -45]
+	      DstBlock		      "Lift & Drag"
+	      DstPort		      2
+	    }
+	    Branch {
+	      Points		      [0, -125]
+	      DstBlock		      "1/V"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Line {
+	  SrcBlock		  "gamma\nintegrator"
+	  SrcPort		  1
+	  Points		  [10, 0]
+	  Branch {
+	    DstBlock		    "gamma"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 110]
+	    Branch {
+	      DstBlock		      "sin(gamma)"
+	      DstPort		      1
+	    }
+	    Branch {
+	      Points		      [0, 130]
+	      DstBlock		      "cos(gamma)"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Line {
+	  SrcBlock		  "h\nintegrator"
+	  SrcPort		  1
+	  DstBlock		  "h"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "h derivative\n"
+	  SrcPort		  1
+	  DstBlock		  "h\nintegrator"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "sin(gamma)"
+	  SrcPort		  1
+	  Points		  [-5, 0; 25, 0]
+	  Branch {
+	    Points		    [0, 50]
+	    DstBlock		    "mg*sin(gamma)"
+	    DstPort		    1
+	  }
+	  Branch {
+	    DstBlock		    "Sum2"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "alpha"
+	  SrcPort		  1
+	  Points		  [25, 0]
+	  Branch {
+	    Points		    [0, 30]
+	    Branch {
+	      Points		      [0, 80]
+	      DstBlock		      "Lift & Drag"
+	      DstPort		      1
+	    }
+	    Branch {
+	      DstBlock		      "cos(alpha)"
+	      DstPort		      1
+	    }
+	  }
+	  Branch {
+	    Points		    [0, -30]
+	    DstBlock		    "sin(alpha)"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "sin(alpha)"
+	  SrcPort		  1
+	  DstBlock		  "Tsin(alpha)\n"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "cos(alpha)"
+	  SrcPort		  1
+	  DstBlock		  "Tcos(alpha)\n"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "T"
+	  SrcPort		  1
+	  Points		  [125, 0; 0, -40]
+	  Branch {
+	    DstBlock		    "Tcos(alpha)\n"
+	    DstPort		    2
+	  }
+	  Branch {
+	    Points		    [0, -60]
+	    DstBlock		    "Tsin(alpha)\n"
+	    DstPort		    2
+	  }
+	}
+	Line {
+	  SrcBlock		  "g"
+	  SrcPort		  1
+	  DstBlock		  "mg"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "mg"
+	  SrcPort		  1
+	  Points		  [270, 0; 0, 15]
+	  Branch {
+	    Points		    [0, -50]
+	    DstBlock		    "mg*sin(gamma)"
+	    DstPort		    2
+	  }
+	  Branch {
+	    DstBlock		    "mg*cos(gamma)"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "cos(gamma)"
+	  SrcPort		  1
+	  Points		  [0, 0; 30, 0]
+	  Branch {
+	    DstBlock		    "mg*cos(gamma)"
+	    DstPort		    2
+	  }
+	  Branch {
+	    Points		    [0, 40; -170, 0; 0, -130]
+	    DstBlock		    "tan(gamma_gs)\n*cos(gamma)"
+	    DstPort		    2
+	  }
+	}
+	Line {
+	  SrcBlock		  "*1/m"
+	  SrcPort		  1
+	  DstBlock		  "V\nintegrator"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "1/m"
+	  SrcPort		  1
+	  Points		  [25, 0; 0, -150]
+	  Branch {
+	    Points		    [0, -70; 130, 0; 0, -30]
+	    DstBlock		    "*1/m"
+	    DstPort		    2
+	  }
+	  Branch {
+	    DstBlock		    "*1/mV"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Sum"
+	  SrcPort		  1
+	  DstBlock		  "*1/m"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Lift & Drag"
+	  SrcPort		  2
+	  Points		  [60, 0; 0, -195; 55, 0]
+	  DstBlock		  "Sum"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Tcos(alpha)\n"
+	  SrcPort		  1
+	  Points		  [75, 0; 0, -65]
+	  DstBlock		  "Sum"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "mg*sin(gamma)"
+	  SrcPort		  1
+	  Points		  [135, 0; 0, -235; -495, 0]
+	  DstBlock		  "Sum"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "Lift & Drag"
+	  SrcPort		  1
+	  Points		  [110, 0]
+	  DstBlock		  "Sum1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Tsin(alpha)\n"
+	  SrcPort		  1
+	  Points		  [35, 0; 0, 160]
+	  DstBlock		  "Sum1"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "mg*cos(gamma)"
+	  SrcPort		  1
+	  Points		  [40, 0; 0, 60; -405, 0]
+	  DstBlock		  "Sum1"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "1/V"
+	  SrcPort		  1
+	  Points		  [5, 0; 0, 40]
+	  DstBlock		  "*1/mV"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "*1/mV"
+	  SrcPort		  1
+	  DstBlock		  "gamma\nintegrator"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Sum1"
+	  SrcPort		  1
+	  Points		  [10, 0; 0, -30]
+	  DstBlock		  "*1/mV"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "gamma_gs"
+	  SrcPort		  1
+	  DstBlock		  "tan(gamma_gs)"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Sum2"
+	  SrcPort		  1
+	  DstBlock		  "h derivative\n"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "tan(gamma_gs)"
+	  SrcPort		  1
+	  DstBlock		  "tan(gamma_gs)\n*cos(gamma)"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "tan(gamma_gs)\n*cos(gamma)"
+	  SrcPort		  1
+	  Points		  [120, 0]
+	  DstBlock		  "Sum2"
+	  DstPort		  2
+	}
+      }
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Sum"
+      Ports		      [2, 1]
+      Position		      [195, 175, 215, 195]
+      BackgroundColor	      "yellow"
+      ShowName		      off
+      IconShape		      "round"
+      Inputs		      "|++"
+      InputSameDT	      off
+      OutDataTypeMode	      "Inherit via internal rule"
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Sum1"
+      Ports		      [2, 1]
+      Position		      [195, 235, 215, 255]
+      BackgroundColor	      "yellow"
+      ShowName		      off
+      IconShape		      "round"
+      Inputs		      "|++"
+      InputSameDT	      off
+      OutDataTypeMode	      "Inherit via internal rule"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "T0"
+      Position		      [60, 286, 125, 314]
+      BackgroundColor	      "yellow"
+      Value		      "T_trim"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "V Scope"
+      Ports		      [1]
+      Position		      [510, 99, 540, 131]
+      BackgroundColor	      "green"
+      Location		      [695, 57, 1019, 296]
+      Open		      on
+      NumInputPorts	      "1"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      List {
+	ListType		SelectedSignals
+	axes1			""
+      }
+      TimeRange		      "10"
+      YMin		      "81.8"
+      YMax		      "81.8"
+      DataFormat	      "StructureWithTime"
+      LimitDataPoints	      off
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "alpha0"
+      Position		      [60, 196, 125, 224]
+      BackgroundColor	      "yellow"
+      Value		      "alpha_trim"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "gamma Scope"
+      Ports		      [1]
+      Position		      [510, 184, 540, 216]
+      BackgroundColor	      "green"
+      Location		      [695, 356, 1019, 595]
+      Open		      on
+      NumInputPorts	      "1"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      List {
+	ListType		SelectedSignals
+	axes1			""
+      }
+      TimeRange		      "10"
+      YMin		      "-0.0523599"
+      YMax		      "-0.0523599"
+      SaveName		      "ScopeData1"
+      DataFormat	      "StructureWithTime"
+      LimitDataPoints	      off
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "h Scope"
+      Ports		      [1]
+      Position		      [510, 264, 540, 296]
+      BackgroundColor	      "green"
+      Location		      [695, 523, 1019, 762]
+      Open		      on
+      NumInputPorts	      "1"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      List {
+	ListType		SelectedSignals
+	axes1			""
+      }
+      TimeRange		      "10"
+      YMin		      "-8e-010"
+      YMax		      "0"
+      SaveName		      "ScopeData2"
+      DataFormat	      "StructureWithTime"
+      LimitDataPoints	      off
+    }
+    Block {
+      BlockType		      Outport
+      Name		      "V"
+      Position		      [430, 168, 460, 182]
+      BackgroundColor	      "lightBlue"
+    }
+    Block {
+      BlockType		      Outport
+      Name		      "gamma"
+      Position		      [430, 208, 460, 222]
+      BackgroundColor	      "lightBlue"
+      Port		      "2"
+    }
+    Block {
+      BlockType		      Outport
+      Name		      "h"
+      Position		      [430, 248, 460, 262]
+      BackgroundColor	      "lightBlue"
+      Port		      "3"
+    }
+    Line {
+      SrcBlock		      "Aircraft"
+      SrcPort		      1
+      Points		      [0, 0; 35, 0]
+      Branch {
+	DstBlock		"V"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, -60]
+	DstBlock		"V Scope"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "Aircraft"
+      SrcPort		      2
+      Points		      [0, 0; 35, 0]
+      Branch {
+	DstBlock		"gamma"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, -15]
+	DstBlock		"gamma Scope"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "Aircraft"
+      SrcPort		      3
+      Points		      [0, 0; 35, 0]
+      Branch {
+	DstBlock		"h"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, 25]
+	DstBlock		"h Scope"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "alpha"
+      SrcPort		      1
+      Points		      [40, 0; 0, 35]
+      DstBlock		      "Sum"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Sum"
+      SrcPort		      1
+      DstBlock		      "Aircraft"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "T"
+      SrcPort		      1
+      Points		      [40, 0; 0, -15]
+      DstBlock		      "Sum1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Sum1"
+      SrcPort		      1
+      DstBlock		      "Aircraft"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "alpha0"
+      SrcPort		      1
+      DstBlock		      "Sum"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "T0"
+      SrcPort		      1
+      Points		      [75, 0]
+      DstBlock		      "Sum1"
+      DstPort		      2
+    }
+    Annotation {
+      Name		      "Embedded Control Systems in C/C++\nby Jim Ledin"
+"\n\nThis model is used by \"dotrim.m\"\n\nModel of an aircraft on landing app"
+"roach."
+      Position		      [189, 65]
+    }
+  }
+}

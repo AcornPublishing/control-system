@@ -1,0 +1,785 @@
+Model {
+  Name			  "PID_Controller"
+  Version		  5.0
+  SaveDefaultBlockParams  on
+  SampleTimeColors	  off
+  LibraryLinkDisplay	  "none"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  ShowStorageClass	  off
+  ExecutionOrder	  off
+  RecordCoverage	  off
+  CovPath		  "/"
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  covSaveCumulativeToWorkspaceVar on
+  CovSaveSingleToWorkspaceVar on
+  CovCumulativeVarName	  "covCumulativeData"
+  CovCumulativeReport	  off
+  DataTypeOverride	  "UseLocalSettings"
+  MinMaxOverflowLogging	  "UseLocalSettings"
+  MinMaxOverflowArchiveMode "Overwrite"
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  Created		  "Tue Aug 06 12:47:50 2002"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "Administrator"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Fri Aug 22 05:43:28 2003"
+  ModelVersionFormat	  "1.%<AutoIncrement:25>"
+  ConfigurationManager	  "None"
+  SimParamPage		  "Solver"
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "MATLABWorkspace"
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  TryForcingSFcnDF	  off
+  ExtModeMexFile	  "ext_comm"
+  ExtModeBatchMode	  off
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  BufferReuse		  on
+  RTWExpressionDepthLimit 5
+  SimulationMode	  "normal"
+  Solver		  "ode45"
+  SolverMode		  "Auto"
+  StartTime		  "0.0"
+  StopTime		  "10"
+  MaxOrder		  5
+  MaxStep		  "0.001"
+  MinStep		  "auto"
+  MaxNumMinSteps	  "-1"
+  InitialStep		  "auto"
+  FixedStep		  "0.1"
+  RelTol		  "1e-9"
+  AbsTol		  "1e-12"
+  OutputOption		  "RefineOutputTimes"
+  OutputTimes		  "[]"
+  Refine		  "1"
+  LoadExternalInput	  off
+  ExternalInput		  "[t, u]"
+  LoadInitialState	  off
+  InitialState		  "xInitial"
+  SaveTime		  on
+  TimeSaveName		  "tout"
+  SaveState		  off
+  StateSaveName		  "xout"
+  SaveOutput		  on
+  OutputSaveName	  "yout"
+  SaveFinalState	  off
+  FinalStateName	  "xFinal"
+  SaveFormat		  "Array"
+  Decimation		  "1"
+  LimitDataPoints	  on
+  MaxDataPoints		  "1000"
+  SignalLoggingName	  "sigsOut"
+  ConsistencyChecking	  "none"
+  ArrayBoundsChecking	  "none"
+  AlgebraicLoopMsg	  "warning"
+  BlockPriorityViolationMsg "warning"
+  MinStepSizeMsg	  "warning"
+  InheritedTsInSrcMsg	  "warning"
+  DiscreteInheritContinuousMsg "warning"
+  MultiTaskRateTransMsg	  "error"
+  SingleTaskRateTransMsg  "none"
+  CheckForMatrixSingularity "none"
+  IntegerOverflowMsg	  "warning"
+  Int32ToFloatConvMsg	  "warning"
+  ParameterDowncastMsg	  "error"
+  ParameterOverflowMsg	  "error"
+  ParameterPrecisionLossMsg "warning"
+  UnderSpecifiedDataTypeMsg "none"
+  UnnecessaryDatatypeConvMsg "none"
+  VectorMatrixConversionMsg "none"
+  InvalidFcnCallConnMsg	  "error"
+  SignalLabelMismatchMsg  "none"
+  UnconnectedInputMsg	  "warning"
+  UnconnectedOutputMsg	  "warning"
+  UnconnectedLineMsg	  "warning"
+  SfunCompatibilityCheckMsg "none"
+  RTWInlineParameters	  off
+  BlockReductionOpt	  on
+  BooleanDataType	  off
+  ConditionallyExecuteInputs on
+  ParameterPooling	  on
+  OptimizeBlockIOStorage  on
+  ZeroCross		  on
+  AssertionControl	  "UseLocalSettings"
+  ProdHWDeviceType	  "Microprocessor"
+  ProdHWWordLengths	  "8,16,32,32"
+  RTWSystemTargetFile	  "grt.tlc"
+  RTWTemplateMakefile	  "grt_default_tmf"
+  RTWMakeCommand	  "make_rtw"
+  RTWGenerateCodeOnly	  off
+  RTWRetainRTWFile	  off
+  TLCProfiler		  off
+  TLCDebug		  off
+  TLCCoverage		  off
+  TLCAssertion		  off
+  BlockDefaults {
+    Orientation		    "right"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+  }
+  BlockParameterDefaults {
+    Block {
+      BlockType		      Abs
+      SaturateOnIntegerOverflow	on
+      ZeroCross		      on
+    }
+    Block {
+      BlockType		      Constant
+      Value		      "1"
+      VectorParams1D	      on
+      ShowAdditionalParam     off
+      OutDataTypeMode	      "Inherit from 'Constant value'"
+      OutDataType	      "sfix(16)"
+      ConRadixGroup	      "Use specified scaling"
+      OutScaling	      "2^0"
+    }
+    Block {
+      BlockType		      Derivative
+    }
+    Block {
+      BlockType		      Gain
+      Gain		      "1"
+      Multiplication	      "Element-wise(K.*u)"
+      ShowAdditionalParam     off
+      ParameterDataTypeMode   "Same as input"
+      ParameterDataType	      "sfix(16)"
+      ParameterScalingMode    "Best Precision: Matrix-wise"
+      ParameterScaling	      "2^0"
+      OutDataTypeMode	      "Same as input"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      Inport
+      Port		      "1"
+      PortDimensions	      "-1"
+      SampleTime	      "-1"
+      ShowAdditionalParam     off
+      LatchInput	      off
+      DataType		      "auto"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      Integrator
+      ExternalReset	      "none"
+      InitialConditionSource  "internal"
+      InitialCondition	      "0"
+      LimitOutput	      off
+      UpperSaturationLimit    "inf"
+      LowerSaturationLimit    "-inf"
+      ShowSaturationPort      off
+      ShowStatePort	      off
+      AbsoluteTolerance	      "auto"
+      ZeroCross		      on
+    }
+    Block {
+      BlockType		      Outport
+      Port		      "1"
+      OutputWhenDisabled      "held"
+      InitialOutput	      "[]"
+    }
+    Block {
+      BlockType		      Saturate
+      UpperLimit	      "0.5"
+      LowerLimit	      "-0.5"
+      LinearizeAsGain	      on
+      ZeroCross		      on
+    }
+    Block {
+      BlockType		      Step
+      Time		      "1"
+      Before		      "0"
+      After		      "1"
+      SampleTime	      "-1"
+      VectorParams1D	      on
+      ZeroCross		      on
+    }
+    Block {
+      BlockType		      SubSystem
+      ShowPortLabels	      on
+      Permissions	      "ReadWrite"
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      SimViewingDevice	      off
+      DataTypeOverride	      "UseLocalSettings"
+      MinMaxOverflowLogging   "UseLocalSettings"
+    }
+    Block {
+      BlockType		      Sum
+      IconShape		      "rectangular"
+      Inputs		      "++"
+      ShowAdditionalParam     off
+      InputSameDT	      on
+      OutDataTypeMode	      "Same as first input"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      Switch
+      Criteria		      "u2 >= Threshold"
+      Threshold		      "0"
+      ShowAdditionalParam     off
+      InputSameDT	      on
+      OutDataTypeMode	      "Inherit via internal rule"
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      ZeroCross		      on
+    }
+    Block {
+      BlockType		      ToWorkspace
+      VariableName	      "simulink_output"
+      MaxDataPoints	      "1000"
+      Decimation	      "1"
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      TransferFcn
+      Numerator		      "[1]"
+      Denominator	      "[1 2 1]"
+      AbsoluteTolerance	      "auto"
+      Realization	      "auto"
+    }
+    Block {
+      BlockType		      TransportDelay
+      DelayTime		      "1"
+      InitialInput	      "0"
+      BufferSize	      "1024"
+      PadeOrder		      "0"
+      TransDelayFeedthrough   off
+    }
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  System {
+    Name		    "PID_Controller"
+    Location		    [158, 86, 796, 384]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "usletter"
+    PaperUnits		    "inches"
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    Block {
+      BlockType		      Derivative
+      Name		      "Derivative"
+      Position		      [155, 80, 185, 110]
+      BackgroundColor	      "yellow"
+    }
+    Block {
+      BlockType		      TransferFcn
+      Name		      "Inertia"
+      Position		      [445, 197, 505, 233]
+      BackgroundColor	      "green"
+      Denominator	      "[1 0 0]"
+    }
+    Block {
+      BlockType		      Integrator
+      Name		      "Integrator"
+      Ports		      [1, 1]
+      Position		      [155, 135, 185, 165]
+      BackgroundColor	      "yellow"
+    }
+    Block {
+      BlockType		      TransferFcn
+      Name		      "Motor"
+      Position		      [350, 197, 410, 233]
+      BackgroundColor	      "green"
+      Denominator	      "[0.1 1]"
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "PID Controller"
+      Ports		      [1, 1]
+      Position		      [145, 200, 175, 230]
+      BackgroundColor	      "yellow"
+      AncestorBlock	      "simulink_extras/Additional\nLinear/PID Controll"
+"er"
+      TreatAsAtomicUnit	      off
+      MaskType		      "PID Controller"
+      MaskDescription	      "Enter expressions for proportional, integral, a"
+"nd derivative gains and for the integrator windup error threshold.\nu = Kp(Ki"
+"/s + Kds + 1) e"
+      MaskPromptString	      "Proportional Gain:|Integral Gain:|Derivative Ga"
+"in:|Windup Error Threshold:"
+      MaskStyleString	      "edit,edit,edit,edit"
+      MaskTunableValueString  "on,on,on,on"
+      MaskCallbackString      "|||"
+      MaskEnableString	      "on,on,on,on"
+      MaskVisibilityString    "on,on,on,on"
+      MaskToolTipString	      "on,on,on,on"
+      MaskVarAliasString      ",,,"
+      MaskVariables	      "Kp=@1;Ki=@2;Kd=@3;windup_limit=@4;"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+      MaskValueString	      "Kp|Ki|Kd|integ_threshold"
+      Port {
+	PortNumber		1
+	Name			"u(t)"
+	TestPoint		off
+	LinearAnalysisOutput	off
+	LinearAnalysisInput	off
+	RTWStorageClass		"Auto"
+	DataLogging		off
+	DataLoggingNameMode	"SignalName"
+	DataLoggingDecimateData	off
+	DataLoggingDecimation	"2"
+	DataLoggingLimitDataPoints off
+	DataLoggingMaxPoints	"5000"
+      }
+      System {
+	Name			"PID Controller"
+	Location		[612, 335, 1221, 637]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "e"
+	  Position		  [25, 90, 45, 110]
+	}
+	Block {
+	  BlockType		  Abs
+	  Name			  "Abs"
+	  Position		  [80, 85, 110, 115]
+	}
+	Block {
+	  BlockType		  Derivative
+	  Name			  "Derivative"
+	  Position		  [135, 153, 175, 177]
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Derivative\nGain"
+	  Position		  [215, 149, 245, 181]
+	  Gain			  "Kd"
+	}
+	Block {
+	  BlockType		  TransferFcn
+	  Name			  "Integral"
+	  Position		  [185, 82, 220, 118]
+	  Numerator		  "1"
+	  Denominator		  "[1 0]"
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Integral\nGain"
+	  Position		  [245, 84, 275, 116]
+	  Gain			  "Ki"
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Proportional\nGain"
+	  Position		  [380, 84, 410, 116]
+	  Gain			  "Kp"
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum"
+	  Ports			  [3, 1]
+	  Position		  [325, 82, 345, 118]
+	  Inputs		  "+++"
+	}
+	Block {
+	  BlockType		  Switch
+	  Name			  "Switch"
+	  Position		  [140, 85, 170, 115]
+	  Threshold		  "integ_threshold"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Zero"
+	  Position		  [80, 25, 110, 55]
+	  Value			  "0"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "u"
+	  Position		  [445, 90, 465, 110]
+	  InitialOutput		  "0"
+	}
+	Line {
+	  SrcBlock		  "Integral"
+	  SrcPort		  1
+	  DstBlock		  "Integral\nGain"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Derivative\nGain"
+	  SrcPort		  1
+	  Points		  [40, 0; 0, -55]
+	  DstBlock		  "Sum"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "e"
+	  SrcPort		  1
+	  Points		  [0, 0; 15, 0]
+	  Branch {
+	    Points		    [0, -90; 225, 0; 0, 80]
+	    DstBlock		    "Sum"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 40]
+	    Branch {
+	      Points		      [0, 25]
+	      DstBlock		      "Derivative"
+	      DstPort		      1
+	    }
+	    Branch {
+	      Points		      [55, 0; 0, -30]
+	      DstBlock		      "Switch"
+	      DstPort		      3
+	    }
+	  }
+	  Branch {
+	    DstBlock		    "Abs"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Sum"
+	  SrcPort		  1
+	  DstBlock		  "Proportional\nGain"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Derivative"
+	  SrcPort		  1
+	  DstBlock		  "Derivative\nGain"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Proportional\nGain"
+	  SrcPort		  1
+	  DstBlock		  "u"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Integral\nGain"
+	  SrcPort		  1
+	  DstBlock		  "Sum"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Switch"
+	  SrcPort		  1
+	  DstBlock		  "Integral"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Abs"
+	  SrcPort		  1
+	  DstBlock		  "Switch"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Zero"
+	  SrcPort		  1
+	  Points		  [5, 0; 0, 50]
+	  DstBlock		  "Switch"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      Saturate
+      Name		      "Saturation"
+      Position		      [215, 200, 245, 230]
+      BackgroundColor	      "green"
+      UpperLimit	      "limit"
+      LowerLimit	      "-limit"
+    }
+    Block {
+      BlockType		      Step
+      Name		      "Step"
+      Position		      [15, 200, 45, 230]
+      BackgroundColor	      "yellow"
+      Time		      "0"
+      SampleTime	      "0"
+      Port {
+	PortNumber		1
+	Name			"r(t)"
+	TestPoint		off
+	LinearAnalysisOutput	off
+	LinearAnalysisInput	off
+	RTWStorageClass		"Auto"
+	DataLogging		off
+	DataLoggingNameMode	"SignalName"
+	DataLoggingDecimateData	off
+	DataLoggingDecimation	"2"
+	DataLoggingLimitDataPoints off
+	DataLoggingMaxPoints	"5000"
+      }
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Sum"
+      Ports		      [2, 1]
+      Position		      [90, 205, 110, 225]
+      BackgroundColor	      "yellow"
+      ShowName		      off
+      IconShape		      "round"
+      Inputs		      "|+-"
+      Port {
+	PortNumber		1
+	Name			"e(t)"
+	TestPoint		off
+	LinearAnalysisOutput	off
+	LinearAnalysisInput	off
+	RTWStorageClass		"Auto"
+	DataLogging		off
+	DataLoggingNameMode	"SignalName"
+	DataLoggingDecimateData	off
+	DataLoggingDecimation	"2"
+	DataLoggingLimitDataPoints off
+	DataLoggingMaxPoints	"5000"
+      }
+    }
+    Block {
+      BlockType		      ToWorkspace
+      Name		      "To Workspace"
+      Position		      [230, 25, 290, 55]
+      BackgroundColor	      "lightBlue"
+      ShowName		      off
+      VariableName	      "error"
+      MaxDataPoints	      "inf"
+      SampleTime	      "-1"
+      SaveFormat	      "StructureWithTime"
+    }
+    Block {
+      BlockType		      ToWorkspace
+      Name		      "To Workspace1"
+      Position		      [230, 80, 290, 110]
+      BackgroundColor	      "lightBlue"
+      ShowName		      off
+      VariableName	      "derivative"
+      MaxDataPoints	      "inf"
+      SampleTime	      "-1"
+      SaveFormat	      "StructureWithTime"
+    }
+    Block {
+      BlockType		      ToWorkspace
+      Name		      "To Workspace2"
+      Position		      [230, 135, 290, 165]
+      BackgroundColor	      "lightBlue"
+      ShowName		      off
+      VariableName	      "integral"
+      MaxDataPoints	      "inf"
+      SampleTime	      "-1"
+      SaveFormat	      "StructureWithTime"
+    }
+    Block {
+      BlockType		      ToWorkspace
+      Name		      "To Workspace3"
+      Position		      [545, 200, 605, 230]
+      BackgroundColor	      "lightBlue"
+      ShowName		      off
+      VariableName	      "response"
+      MaxDataPoints	      "inf"
+      SampleTime	      "-1"
+      SaveFormat	      "StructureWithTime"
+    }
+    Block {
+      BlockType		      ToWorkspace
+      Name		      "To Workspace4"
+      Position		      [445, 145, 505, 175]
+      BackgroundColor	      "lightBlue"
+      ShowName		      off
+      VariableName	      "actuator"
+      MaxDataPoints	      "inf"
+      SampleTime	      "-1"
+      SaveFormat	      "StructureWithTime"
+    }
+    Block {
+      BlockType		      TransportDelay
+      Name		      "Transport\nDelay"
+      Position		      [290, 200, 320, 230]
+      BackgroundColor	      "green"
+      DelayTime		      "delay"
+    }
+    Line {
+      SrcBlock		      "Inertia"
+      SrcPort		      1
+      Points		      [0, 0; 10, 0]
+      Branch {
+	DstBlock		"To Workspace3"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, 55; -420, 0]
+	DstBlock		"Sum"
+	DstPort			2
+      }
+    }
+    Line {
+      Name		      "e(t)"
+      Labels		      [0, 0]
+      SrcBlock		      "Sum"
+      SrcPort		      1
+      Points		      [0, 0; 10, 0]
+      Branch {
+	Points			[0, -65]
+	Branch {
+	  DstBlock		  "Integrator"
+	  DstPort		  1
+	}
+	Branch {
+	  Points		  [0, -55]
+	  Branch {
+	    Points		    [0, -55]
+	    DstBlock		    "To Workspace"
+	    DstPort		    1
+	  }
+	  Branch {
+	    DstBlock		    "Derivative"
+	    DstPort		    1
+	  }
+	}
+      }
+      Branch {
+	DstBlock		"PID Controller"
+	DstPort			1
+      }
+    }
+    Line {
+      Name		      "r(t)"
+      Labels		      [0, 0]
+      SrcBlock		      "Step"
+      SrcPort		      1
+      DstBlock		      "Sum"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Motor"
+      SrcPort		      1
+      Points		      [0, 0; 10, 0]
+      Branch {
+	DstBlock		"Inertia"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, -55]
+	DstBlock		"To Workspace4"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "Integrator"
+      SrcPort		      1
+      DstBlock		      "To Workspace2"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Derivative"
+      SrcPort		      1
+      DstBlock		      "To Workspace1"
+      DstPort		      1
+    }
+    Line {
+      Name		      "u(t)"
+      Labels		      [0, 0]
+      SrcBlock		      "PID Controller"
+      SrcPort		      1
+      DstBlock		      "Saturation"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Saturation"
+      SrcPort		      1
+      DstBlock		      "Transport\nDelay"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Transport\nDelay"
+      SrcPort		      1
+      DstBlock		      "Motor"
+      DstPort		      1
+    }
+    Annotation {
+      Name		      "Embedded Control Systems in C/C++\nby Jim Ledin"
+"\n\nThis model is used by \"figures.m\"\n\nModel of a motor driving an inerti"
+"al load\nusing PID control.\nThe model includes actuator saturation\nand the "
+"processing time delay"
+      Position		      [474, 75]
+    }
+  }
+}
